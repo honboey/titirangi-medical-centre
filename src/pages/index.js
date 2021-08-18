@@ -12,7 +12,7 @@ function IndexPage() {
         <p><Link to="/about">Learn more about us</Link></p>
       </section>
       <section>
-        <StaticImage src="../images/clinic.png" />
+        <StaticImage src="../images/clinic.jpg" />
         <h3>Our clinic</h3>
         <p>We are housed in a beautiful fibro house overlooking the Waitakere Ranges. When you visit us, it’s like you’re visiting a family home not a cold, clinical centre. Please visit us at <a href="https://goo.gl/maps/b1cxbq87KPzqd18k6">2 Newland Rd, Titirangi</a>.</p>
       </section>

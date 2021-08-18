@@ -7,7 +7,7 @@ function Layout({ children }) {
         <>
             <header>
                 <nav>
-                    <h1><Link to="/"><StaticImage src="../images/logo.gif" />Titirangi Medical Centre</Link></h1>
+                    <h1><Link to="/"><StaticImage src="../images/logo.jpg" />Titirangi Medical Centre</Link></h1>
                     <ul>
                         <li><Link to="/bookings">Bookings & Enrolments</Link></li>
                         <li><Link to="/about">About</Link></li>
@@ -21,7 +21,7 @@ function Layout({ children }) {
                 {children}
             </main>
             <footer>
-                <h1><StaticImage src="../images/logo.gif" /></h1>
+                <h1><StaticImage src="../images/logo.jpg" /></h1>
                 <p>Mon – Fri<br />
                     8am – 5pm</p>
                 <p>2 Rangiwai Rd<br />

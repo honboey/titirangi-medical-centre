@@ -48,7 +48,7 @@ function AboutPage() {
             </section>
             <section>
                 <h3>Our nursing and support staff</h3>
-                <StaticImage src="../images/staff.png" />
+                <StaticImage src="../images/staff.jpg" />
                 <h4>Nam, sitas solorem quam</h4>
                 <p>Eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum que que nobis eribea ducienectis pla volor alicid ullam am ium et ommo cusandi andebitibus. Perectempos am faccus expliquae pos sit que dolor simil eari delendi genimi, nam faccupt ationsequam rerumet harcia alibus aligendaes ut aut quam.</p>
             </section>
