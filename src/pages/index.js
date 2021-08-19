@@ -6,10 +6,12 @@ import Layout from "../components/Layout"
 function IndexPage() {
   return (
     <Layout title="">
-      <section>
-        <p>For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong.</p>
-        <p>The Titirangi Medical Centre is a team of five GPs, nursing stafff and admin support. We are members of the community and upid qui te sim doluptia volor simagni musdam serchilic tendae. Nem experero cusandicia illupta tquassi aut laboribus.</p>
-        <p><Link to="/about">Learn more about us</Link></p>
+      <section className="border-r border-l border-black mb-8">
+        <div className="w-11/12 mx-auto py-8">
+          <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-8">For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong.</p>
+          <p className="mb-4">The Titirangi Medical Centre is a team of five GPs, nursing stafff and admin support. We are members of the community and upid qui te sim doluptia volor simagni musdam serchilic tendae. Nem experero cusandicia illupta tquassi aut laboribus.</p>
+          <p><Link to="/about">Learn more about us</Link></p>
+        </div>
       </section>
       <section>
         <figure>

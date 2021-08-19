@@ -12,7 +12,11 @@ module.exports = {
       },
       colors: {
         "tmc-green": "#f4f9f1"
-      }
+      },
+      spacing: {
+        "13/24": "54.1666667%",
+        "15/24": "62.5%"
+      },
     },
   },
   variants: {

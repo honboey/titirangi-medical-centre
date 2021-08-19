@@ -5,11 +5,12 @@
 @layer base {
     @font-face {
         font-family: "Eiko";
-        font-weight: 300;
+        font-weight: 200;
         src:    url(./fonts/PPEiko-Thin.woff) format("woff"),
                 url(./fonts/PPEiko-Thin.woff2) format("woff2");
         font-display: swap;
     }
+
     @font-face {
         font-family: "Suisse";
         font-weight: 300;
@@ -17,14 +18,21 @@
                 url(./fonts/SuisseIntl-Light-WebS.woff2) format("woff2");
         font-display: swap;
     }
+
     body {
-        font-family: "Suisse";
         background-color: #f4f9f1;
+        font-family: "Suisse";
         padding: 1rem
     }
-    @media screen and (min-width: 1024px) {
+
+    @media screen and (min-width: 768px) {
         body {
+            font-size: 1.125rem;
             padding: 2rem;
         }
+    }
+
+    a {
+        text-decoration: underline;
     }
 }

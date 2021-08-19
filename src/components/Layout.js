@@ -2,6 +2,8 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import DesktopNavigation from "../components/DesktopNavigation"
+import MobileNavigation from "../components/MobileNavigation"
 
 function Layout({ children, title }) {
     // Data query to retrieve site title
@@ -22,16 +24,14 @@ function Layout({ children, title }) {
                 <meta name="Description" content="For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong." />
             </Helmet>
             <div className="wrapper max-w-screen-xl mx-auto">
-                <header>
-                    <nav>
-                        <h1 className="font-display"><Link to="/"><StaticImage src="../images/logo.jpg" className="w-1/12"/>Titirangi Medical Centre</Link></h1>
-                        <ul>
-                            <li><Link to="/bookings">Bookings & Enrolments</Link></li>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/fees">Fees</Link></li>
-                            <li><Link to="/news">News & Information</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
-                        </ul>
+                <header className="mb-20">
+                    <nav className="flex items-center justify-between">
+                        <div className="flex w-3/4 lg:w-4/12 items-center">
+                            <Link to="/" className="w-1/6 mr-4"><StaticImage src="../images/logo.jpg"/></Link>
+                            <Link to="/" className="no-underline"><h1 className="font-display md:text-xl">Titirangi Medical Centre</h1></Link>
+                        </div>
+                        <DesktopNavigation />
+                        <MobileNavigation />
                     </nav>
                 </header>
                 <main>
