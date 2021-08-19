@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 function ContactPage() {
     return (
-        <Layout>
+        <Layout title=" | Contact">
             <section>
                 <h2>Contact</h2>
                 <h3>Street address</h3>

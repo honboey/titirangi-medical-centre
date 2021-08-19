@@ -1,13 +1,20 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://http://www.titirangimc.co.nz/",
     title: "Titirangi Medical Centre",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          placeholder: "blurred"
+        }
+      }
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
     {

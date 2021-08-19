@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 function AboutPage() {
     return (
-        <Layout>
+        <Layout title=" | About">
             <section>
                 <h2>About our clinic</h2>
                 <p>At recte se vit ernam remperc hicatquamet venim ent as et eturit, vendae cullaturent vendiciis molorem dolora cusdamenia quam el magnis duci to officto taecae voloreius ario destiae coneceprae dolo tem vene vernatis remqui volaoresequam iumquid magniant.</p>
@@ -48,7 +48,10 @@ function AboutPage() {
             </section>
             <section>
                 <h3>Our nursing and support staff</h3>
-                <StaticImage src="../images/staff.jpg" />
+                <figure>
+                    <StaticImage src="../images/staff.jpg" />
+                    <figcaption>Photo by James Green</figcaption>
+                </figure>
                 <h4>Nam, sitas solorem quam</h4>
                 <p>Eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum que que nobis eribea ducienectis pla volor alicid ullam am ium et ommo cusandi andebitibus. Perectempos am faccus expliquae pos sit que dolor simil eari delendi genimi, nam faccupt ationsequam rerumet harcia alibus aligendaes ut aut quam.</p>
             </section>

@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 
 function NewsPage() {
     return (
-        <Layout>
+        <Layout title=" | News & Information">
             <section>
                 <h2>News & updates</h2>
                 <article>

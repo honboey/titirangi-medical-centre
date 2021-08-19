@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 
 function FeesPage() {
     return (
-        <Layout>
+        <Layout title=" | Fees">
             <section>
                 <h2>Consultation Fees</h2>
                 <table>
@@ -46,7 +46,7 @@ function FeesPage() {
                 <table>
                     <tr>
                         <th scope="col">Smears</th>
-                        <td scope="col">Fee ($)</td>
+                        <th scope="col">Fee ($)</th>
                     </tr>
                     <tr>
                         <td>Smear only</td>

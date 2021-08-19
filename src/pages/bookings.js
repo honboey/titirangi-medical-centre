@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 function BookingsPage() {
     return (
-        <Layout>
+        <Layout title=" | Bookings & Enrolments">
             <section>
                 <h2>Bookings</h2>
                 <p>(Existing / enrolled patients)</p>

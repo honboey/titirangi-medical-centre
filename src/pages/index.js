@@ -5,24 +5,33 @@ import Layout from "../components/Layout"
 
 function IndexPage() {
   return (
-    <Layout>
+    <Layout title="">
       <section>
         <p>For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong.</p>
         <p>The Titirangi Medical Centre is a team of five GPs, nursing stafff and admin support. We are members of the community and upid qui te sim doluptia volor simagni musdam serchilic tendae. Nem experero cusandicia illupta tquassi aut laboribus.</p>
         <p><Link to="/about">Learn more about us</Link></p>
       </section>
       <section>
-        <StaticImage src="../images/clinic.jpg" />
+        <figure>
+          <StaticImage src="../images/clinic.jpg" />
+          <figcaption>Photographer's name</figcaption>
+        </figure>
         <h3>Our clinic</h3>
         <p>We are housed in a beautiful fibro house overlooking the Waitakere Ranges. When you visit us, it’s like you’re visiting a family home not a cold, clinical centre. Please visit us at <a href="https://goo.gl/maps/b1cxbq87KPzqd18k6">2 Newland Rd, Titirangi</a>.</p>
       </section>
       <section>
-        <StaticImage src="../images/silver-fern.jpg" />
+        <figure>
+          <StaticImage src="../images/silver-fern.jpg" />
+          <figcaption>Photo by <a href="https://unsplash.com/@philbotha">Phil Botha</a></figcaption>
+        </figure>
         <h3>New patients</h3>
         <p>Our books are currently open and we welcome to enrolments. To enrol please visit the <Link to="/bookings">Enrol page</Link> to find out the fastest and easiest way to do so.</p>
       </section>
       <section>
-        <StaticImage src="../images/waitakere-beach.jpg" />
+        <figure>
+          <StaticImage src="../images/waitakere-beach.jpg" />
+          <figcaption>Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
+        </figure>
         <h3>News & information</h3>
         <p>Have a question about the practice? Visit <Link to="/news">the FAQs</Link> to see if we’ve already answered it. Otherwise feel free to give us a call on <a href="tel:">0405 266 261</a> so one of our staff can help you out</p>
       </section>

@@ -1,10 +1,27 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
-function Layout({ children }) {
+function Layout({ children, title }) {
+    // Data query to retrieve site title
+    const data = useStaticQuery(graphql`
+        query MyQuery {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }      
+    `)
+        console.log(title)
     return (
         <>
+            <Helmet>
+                <title>{data.site.siteMetadata.title}{title}</title>
+                <meta name="Keywords" content="Titirangi, Medical, Centre, health, Waitakere, doctor, gp, nurse, Auckland, medicine," />
+                <meta name="Description" content="For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong." />
+            </Helmet>
             <header>
                 <nav>
                     <h1><Link to="/"><StaticImage src="../images/logo.jpg" />Titirangi Medical Centre</Link></h1>
