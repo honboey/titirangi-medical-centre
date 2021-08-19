@@ -5,7 +5,15 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "display": ["Eiko", "ui-serif"],
+        "body": ["Suisse", "ui-sans"]
+      },
+      colors: {
+        "tmc-green": "#f4f9f1"
+      }
+    },
   },
   variants: {
     extend: {},

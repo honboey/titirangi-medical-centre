@@ -23,8 +23,8 @@ function Layout({ children, title }) {
                 <meta name="Description" content="For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong." />
             </Helmet>
             <header>
-                <nav>
-                    <h1><Link to="/"><StaticImage src="../images/logo.jpg" />Titirangi Medical Centre</Link></h1>
+                <nav className="bg-tmc-green">
+                    <h1 className="font-display"><Link to="/"><StaticImage src="../images/logo.jpg" />Titirangi Medical Centre</Link></h1>
                     <ul>
                         <li><Link to="/bookings">Bookings & Enrolments</Link></li>
                         <li><Link to="/about">About</Link></li>

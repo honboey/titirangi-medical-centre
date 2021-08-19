@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Eiko";
+        font-weight: 300;
+        src:    url(./fonts/PPEiko-Thin.woff) format("woff"),
+                url(./fonts/PPEiko-Thin.woff2) format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Suisse";
+        font-weight: 300;
+        src:    url(./fonts/SuisseIntl-Light-WebS.woff) format("woff"),
+                url(./fonts/SuisseIntl-Light-WebS.woff2) format("woff2");
+        font-display: swap;
+    }
+}
