@@ -17,4 +17,14 @@
                 url(./fonts/SuisseIntl-Light-WebS.woff2) format("woff2");
         font-display: swap;
     }
+    body {
+        font-family: "Suisse";
+        background-color: #f4f9f1;
+        padding: 1rem
+    }
+    @media screen and (min-width: 1024px) {
+        body {
+            padding: 2rem;
+        }
+    }
 }
