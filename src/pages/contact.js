@@ -13,7 +13,7 @@ function ContactPage() {
                     Titrangi<br/>
                     Waitakere 0604</p>
                 </a>
-                <StaticImage src="../images/map.png" />
+                <StaticImage src="../images/map.png" alt="Google map" />
                 <h3>Phone</h3>
                 <a href="tel:"><p>(09) 817 8069</p></a>
                 <h3>Postal address</h3>

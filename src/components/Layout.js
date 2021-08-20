@@ -27,7 +27,7 @@ function Layout({ children, title }) {
                 <header className="mb-20">
                     <nav className="flex items-center justify-between">
                         <div className="flex w-3/4 lg:w-4/12 items-center">
-                            <Link to="/" className="w-1/6 mr-4"><StaticImage src="../images/logo.jpg"/></Link>
+                            <Link to="/" className="w-1/6 mr-4"><StaticImage src="../images/logo.jpg" alt=""/></Link>
                             <Link to="/" className="no-underline"><h1 className="font-display md:text-xl">Titirangi Medical Centre</h1></Link>
                         </div>
                         <DesktopNavigation />
@@ -38,7 +38,7 @@ function Layout({ children, title }) {
                     {children}
                 </main>
                 <footer>
-                    <h1><StaticImage src="../images/logo.jpg" /></h1>
+                    <h1><StaticImage src="../images/logo.jpg" alt=""/></h1>
                     <p>Mon – Fri<br />
                         8am – 5pm</p>
                     <p>2 Rangiwai Rd<br />

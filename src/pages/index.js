@@ -6,16 +6,18 @@ import Layout from "../components/Layout"
 function IndexPage() {
   return (
     <Layout title="">
-      <section className="border-r border-l border-black mb-8">
-        <div className="w-11/12 mx-auto py-8">
-          <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-8">For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong.</p>
-          <p className="mb-4">The Titirangi Medical Centre is a team of five GPs, nursing stafff and admin support. We are members of the community and upid qui te sim doluptia volor simagni musdam serchilic tendae. Nem experero cusandicia illupta tquassi aut laboribus.</p>
-          <p><Link to="/about">Learn more about us</Link></p>
+      <section className="border-r border-l border-black pl-1/24 pr-1/24 mb-8">
+        <div className="py-8 lg:flex">
+          <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal lg:w-8/12 lg:border-r lg:border-black lg:pr-1/24 mb-8">For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong.</p>
+          <div className="lg:w-4/12 lg:px-1/24 lg:pt-8">
+            <p className="mb-4">The Titirangi Medical Centre is a team of five GPs, nursing stafff and admin support. We are members of the community and upid qui te sim doluptia volor simagni musdam serchilic tendae. Nem experero cusandicia illupta tquassi aut laboribus.</p>
+            <p><Link to="/about">Learn more about us</Link></p>
+          </div>
         </div>
       </section>
       <section>
         <figure>
-          <StaticImage src="../images/clinic.jpg" />
+          <StaticImage src="../images/clinic.jpg" alt="The clinic exterior"/>
           <figcaption>Photographer's name</figcaption>
         </figure>
         <h3>Our clinic</h3>
@@ -23,7 +25,7 @@ function IndexPage() {
       </section>
       <section>
         <figure>
-          <StaticImage src="../images/silver-fern.jpg" />
+          <StaticImage src="../images/silver-fern.jpg" alt="Silver fern"/>
           <figcaption>Photo by <a href="https://unsplash.com/@philbotha">Phil Botha</a></figcaption>
         </figure>
         <h3>New patients</h3>
@@ -31,7 +33,7 @@ function IndexPage() {
       </section>
       <section>
         <figure>
-          <StaticImage src="../images/waitakere-beach.jpg" />
+          <StaticImage src="../images/waitakere-beach.jpg" alt="A beach in Waitakere" />
           <figcaption>Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
         </figure>
         <h3>News & information</h3>

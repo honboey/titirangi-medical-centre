@@ -49,7 +49,7 @@ function AboutPage() {
             <section>
                 <h3>Our nursing and support staff</h3>
                 <figure>
-                    <StaticImage src="../images/staff.jpg" />
+                    <StaticImage src="../images/staff.jpg" alt="The Titirangi Medical Centre staff" />
                     <figcaption>Photo by James Green</figcaption>
                 </figure>
                 <h4>Nam, sitas solorem quam</h4>

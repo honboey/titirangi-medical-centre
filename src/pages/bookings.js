@@ -19,7 +19,7 @@ function BookingsPage() {
                 <h2>Enrolments</h2>
                 <p>(New patients)</p>
                 <h3>New patients</h3>
-                <a href=""><StaticImage src="../images/form.jpg" /></a>
+                <a href="/"><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" /></a>
                 <p>Our books are currently open and we are taking new enrolments.</p>
                 <p>Please download this form. Once the form is completed, please email it to <a href="mailto:admin@titirangimc.co.nz">admin@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
             </section>
