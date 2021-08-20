@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
+import ImageAndTextComponent from "../components/ImageAndTextComponent"
 
 function IndexPage() {
   return (
@@ -15,26 +16,12 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section>
-        <figure className="mb-4">
-          <StaticImage className="w-full lg:w-21/24" src="../images/clinic.jpg" alt="The clinic exterior"/>
-          <figcaption className="text-xs">Photographer's name</figcaption>
-        </figure>
-        <div class="w-8/12 pl-4 py-6 mb-8 border-l border-black float-right">
-          <h3 className="font-display text-2xl">Our clinic</h3>
-          <p>We are housed in a beautiful fibro house overlooking the Waitakere Ranges. When you visit us, it’s like you’re visiting a family home not a cold, clinical centre. Please visit us at <a href="https://goo.gl/maps/b1cxbq87KPzqd18k6">2 Newland Rd, Titirangi</a>.</p>
-        </div>
-      </section>
-      <section>
-        <figure>
-          <StaticImage className="w-full lg:w-21/24" src="../images/silver-fern.jpg" alt="Silver fern"/>
-          <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@philbotha">Phil Botha</a></figcaption>
-        </figure>
-        <div class="w-8/12 pr-4 py-6 mb-8 border-r border-black">
-          <h3 className="font-display text-2xl">New patients</h3>
-          <p>Our books are currently open and we welcome to enrolments. To enrol please visit the <Link to="/bookings">Enrol page</Link> to find out the fastest and easiest way to do so.</p>
-        </div>
-      </section>
+      <ImageAndTextComponent 
+        image="../images/silver-fern.jpg" 
+        alt="Silver fern" 
+        figCaption="Photo by Phil Botha"
+        header="New patients"
+        body="Our books are currently open and we welcome to enrolments. To enrol please visit the Enrol page to find out the fastest and easiest way to do so."/>
       <section>
         <figure>
           <StaticImage className="w-full lg:w-21/24" src="../images/waitakere-beach.jpg" alt="A beach in Waitakere" />
