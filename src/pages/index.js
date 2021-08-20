@@ -1,10 +1,11 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ImageAndTextComponent from "../components/ImageAndTextComponent"
 
-function IndexPage() {
+function IndexPage(data) {
+  console.log(data)
   return (
     <Layout title="">
       <section className="border-r border-l border-black pl-1/24 pr-1/24 mb-8">
@@ -17,7 +18,7 @@ function IndexPage() {
         </div>
       </section>
       <ImageAndTextComponent 
-        image="../images/silver-fern.jpg" 
+        image={data.data.allImageSharp.nodes[4].gatsbyImageData} 
         alt="Silver fern" 
         figCaption="Photo by Phil Botha"
         header="New patients"
@@ -57,3 +58,14 @@ function IndexPage() {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    allImageSharp {
+      nodes {
+        gatsbyImageData
+        id
+      }
+    }
+  }
+`
