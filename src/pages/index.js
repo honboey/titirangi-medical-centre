@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ImageAndTextComponent from "../components/ImageAndTextComponent"
 
-function IndexPage(data) {
+function IndexPage({ data }) {
   console.log(data)
   return (
     <Layout title="">
@@ -18,7 +18,7 @@ function IndexPage(data) {
         </div>
       </section>
       <ImageAndTextComponent 
-        image={data.data.allImageSharp.nodes[4].gatsbyImageData} 
+        image={data.allImageSharp.nodes[4].gatsbyImageData} 
         alt="Silver fern" 
         figCaption="Photo by Phil Botha"
         header="New patients"
