@@ -2,7 +2,8 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
-import ImageAndTextComponent from "../components/ImageAndTextComponent"
+import Hero from "../components/Hero"
+import ImageAndTextLeft from "../components/ImageAndTextLeft"
 
 function IndexPage({ data }) {
   console.log(data)
@@ -17,22 +18,14 @@ function IndexPage({ data }) {
           </div>
         </div>
       </section>
-      <ImageAndTextComponent 
-        image={data.allImageSharp.nodes[4].gatsbyImageData} 
-        alt="Silver fern" 
+      <Hero 
+        image={data.allImageSharp.nodes[5].gatsbyImageData} 
+        alt="External shot of the Titirangi clinic, overlooking the Waitekere ranges" 
         figCaption="Photo by Phil Botha"
-        header="New patients"
-        body="Our books are currently open and we welcome to enrolments. To enrol please visit the Enrol page to find out the fastest and easiest way to do so."/>
-      <section>
-        <figure>
-          <StaticImage className="w-full lg:w-21/24" src="../images/waitakere-beach.jpg" alt="A beach in Waitakere" />
-          <figcaption>Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
-        </figure>
-        <div class="w-8/12 pl-4 py-6 mb-8 border-l border-black float-right">
-          <h3 className="font-display text-2xl">News & information</h3>
-          <p>Have a question about the practice? Visit <Link to="/news">the FAQs</Link> to see if we’ve already answered it. Otherwise feel free to give us a call on <a href="tel:">0405 266 261</a> so one of our staff can help you out</p>
-        </div>
-      </section>
+        header="Our Clinic"
+        body="We are housed in a beautiful fibro house overlooking the Waitakere Ranges. When you visit us, it’s like you’re visiting a family home not a cold, clinical centre. Please visit us at 2 Newland Rd, Titirangi."/>
+      <ImageAndTextLeft />
+      
       <section className="clear-right">
         <h2>Latest News</h2>
         <article>

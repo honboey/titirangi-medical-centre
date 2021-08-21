@@ -24,12 +24,12 @@ function MobileNavigation() {
                     </svg>
                 </button>
                 <ul className="text-tmc-green">
-                    <li><Link to="/" className="font-display text-2xl leading-loose no-underline">Home</Link></li>
-                    <li><Link to="/about" className="font-display text-2xl leading-loose no-underline">About</Link></li>
-                    <li><Link to="/news" className="font-display text-2xl leading-loose no-underline">News & Information</Link></li>
-                    <li><Link to="/fees" className="font-display text-2xl leading-loose no-underline">Fees</Link></li>
-                    <li><Link to="/contact" className="font-display text-2xl leading-loose no-underline">Contact</Link></li>
-                    <li><Link to="/bookings" className="font-display text-2xl leading-loose no-underline"><button className="border border-tcm-green mt-4 rounded-md px-2 py-1">Bookings & Enrolments</button></Link></li>
+                    <li><button onClick={toggleNav}><Link to="/" className="font-display text-2xl leading-loose no-underline">Home</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/about" className="font-display text-2xl leading-loose no-underline">About</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/news" className="font-display text-2xl leading-loose no-underline">News & Information</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/fees" className="font-display text-2xl leading-loose no-underline">Fees</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/contact" className="font-display text-2xl leading-loose no-underline">Contact</Link></button></li>
+                    <li><button onClick={toggleNav} className="border border-tcm-green mt-4 rounded-md px-2 py-1"><Link to="/bookings" className="font-display text-2xl leading-loose no-underline">Bookings & Enrolments</Link></button></li>
                 </ul>
             </nav>
         </div>
