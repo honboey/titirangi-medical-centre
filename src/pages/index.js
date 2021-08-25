@@ -6,7 +6,6 @@ import Hero from "../components/Hero"
 import ImageAndTextLeft from "../components/ImageAndTextLeft"
 
 function IndexPage({ data }) {
-  console.log(data)
   return (
     <Layout title="">
       <section className="border-r border-l border-black pl-1/24 pr-1/24 mb-8">
@@ -18,14 +17,37 @@ function IndexPage({ data }) {
           </div>
         </div>
       </section>
-      <Hero 
-        image={data.allImageSharp.nodes[5].gatsbyImageData} 
-        alt="External shot of the Titirangi clinic, overlooking the Waitekere ranges" 
+      <Hero
+        image={data.allImageSharp.nodes[5].gatsbyImageData}
+        alt="External shot of the Titirangi clinic, overlooking the Waitekere ranges"
         figCaption="Photo by Phil Botha"
         header="Our Clinic"
-        body="We are housed in a beautiful fibro house overlooking the Waitakere Ranges. When you visit us, it’s like you’re visiting a family home not a cold, clinical centre. Please visit us at 2 Newland Rd, Titirangi."/>
-      <ImageAndTextLeft />
-      
+        body="We are housed in a beautiful fibro house overlooking the Waitakere Ranges. When you visit us, it’s like you’re visiting a family home not a cold, clinical centre. Please visit us at 2 Newland Rd, Titirangi." />
+      <section className="lg:w-11/12 lg:mx-auto lg:flex lg:items-center mb-8">
+        <figure className="mb-4 w-full lg:w-14/22 lg:order-2 lg:border-l lg:border-black lg:pl-1/22 lg:pt-4">
+          <StaticImage className="" src="../images/silver-fern.jpg" alt="Silver fern" />
+          <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
+        </figure>
+        <div className="flex justify-end lg:w-8/22 lg:pr-1/22 lg:order-1">
+          <div className="w-8/12 lg:w-full pl-1/24 lg:pl-0 py-6 mb-8 border-l border-black lg:border-0">
+            <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
+            <p>Our books are currently open and we welcome to enrolments. To enrol please visit the Enrol page to find out the fastest and easiest way to do so.</p>
+          </div>
+        </div>
+      </section>
+      <section className="lg:w-11/12 lg:mx-auto lg:flex lg:items-center mb-8">
+        <figure className="mb-4 w-full lg:w-14/22 lg:border-r lg:border-black lg:pr-1/22 lg:pt-4">
+          <StaticImage className="" src="../images/waitakere-beach.jpg" alt="Waitakere beach" />
+          <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
+        </figure>
+        <div className="flex justify-end lg:w-8/22 lg:pl-1/22">
+          <div className="w-8/12 lg:w-full pl-1/24 lg:pl-0 py-6 mb-8 border-l border-black lg:border-0">
+            <h3 className="font-display text-2xl md:text-3xl mb-4">Information</h3>
+            <p>Have a question about the practice? Visit our <Link to="/news">News and Information page</Link> to see if we’ve already answered it. Otherwise feel free to give us a call on <a href="tel:">0405 266 261</a> so one of our staff can help you out.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="clear-right">
         <h2>Latest News</h2>
         <article>

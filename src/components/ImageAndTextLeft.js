@@ -10,7 +10,7 @@ function ImageAndTextLeft() {
                 <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
             </figure>
             <div className="flex justify-end lg:w-1/3 w-8/12 lg:order-1">
-                <div class="py-6 pr-4 lg:pr-4 mb-8 border-r border-black lg:border-0 lg:mr-8">
+                <div className="py-6 pr-4 lg:pr-4 mb-8 border-r border-black lg:border-0 lg:mr-8">
                     <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
                     <p>Our books are currently open and we welcome to enrolments. To enrol please visit the Enrol page to find out the fastest and easiest way to do so.</p>
                 </div>
