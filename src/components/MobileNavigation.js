@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 function MobileNavigation() {
     const [navOpen, setNavOpen] = useState(false);
