@@ -41,7 +41,7 @@ function Layout({ children, title }) {
             </main>
             <footer>
                 <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8 lg:flex lg:justify-between border-t border-black">
-                    <h1 className="w-5/24 lg:pr-1/24 mb-4"><StaticImage src="../images/logo.jpg" alt="Titirangi Medical Centre logo" /></h1>
+                    <h1 className="w-5/24 lg:pr-1/24 mb-4"><Link to="/"><span className="sr-only">Titirangi Medical Centre</span><StaticImage src="../images/logo.jpg" alt="Titirangi Medical Centre logo" /></Link></h1>
                     <p className="lg:px-1/24">Mon – Fri<br />
                         8am – 5pm</p>
                     <div className="lg:px-1/24">
