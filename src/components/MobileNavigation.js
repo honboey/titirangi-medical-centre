@@ -12,7 +12,7 @@ function MobileNavigation() {
     return (
         <div className="lg:hidden">
             {/* Hamburger menu button */}
-            <button onClick={toggleNav}>
+            <button onClick={toggleNav} aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clipRule="evenodd" />
                 </svg>
@@ -28,12 +28,12 @@ function MobileNavigation() {
                     </svg>
                 </button>
                 <ul className="text-tmc-green font-display text-2xl leading-loose">
-                    <li><button onClick={toggleNav}><Link to="/" className="no-underline">Home</Link></button></li>
-                    <li><button onClick={toggleNav}><Link to="/about" className="no-underline">About</Link></button></li>
-                    <li><button onClick={toggleNav}><Link to="/news" className="no-underline">News & Information</Link></button></li>
-                    <li><button onClick={toggleNav}><Link to="/fees" className="no-underline">Fees</Link></button></li>
-                    <li><button onClick={toggleNav}><Link to="/contact" className="no-underline">Contact</Link></button></li>
-                    <li><button onClick={toggleNav} className="border border-tcm-green mt-4 rounded-md px-2 py-1"><Link to="/bookings" className="no-underline">Bookings & Enrolments</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Home</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/about" className="no-underline" activeStyle={{ textDecoration: "underline" }}>About</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/news" className="no-underline" activeStyle={{ textDecoration: "underline" }}>News & Information</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/fees" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Fees</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/contact" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Contact</Link></button></li>
+                    <li><button onClick={toggleNav} className="border border-tcm-green mt-4 rounded-md px-2 py-1"><Link to="/bookings" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Bookings & Enrolments</Link></button></li>
                 </ul>
             </nav>
         </div >

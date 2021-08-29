@@ -19,6 +19,7 @@ function Layout({ children, title }) {
     return (
         <>
             <Helmet>
+                <html lang="en" />
                 <title>{data.site.siteMetadata.title}{title}</title>
                 <meta name="Keywords" content="Titirangi, Medical, Centre, health, Waitakere, doctor, gp, nurse, Auckland, medicine," />
                 <meta name="Description" content="For over seventy years, the Titirangi Medical Centre has supported our local community – keeping us healthy, safe and strong." />
@@ -27,7 +28,7 @@ function Layout({ children, title }) {
                 <header className="mb-20">
                     <nav className="flex items-center justify-between">
                         <div className="flex w-3/4 lg:w-4/12 items-center">
-                            <Link to="/" className="w-1/6 mr-4"><StaticImage src="../images/logo.jpg" alt="" /></Link>
+                            <Link to="/" className="w-1/6 mr-4"><span className="sr-only">Home</span><StaticImage src="../images/logo.jpg" alt="" /></Link>
                             <Link to="/" className="no-underline"><h1 className="font-display md:text-xl">Titirangi Medical Centre</h1></Link>
                         </div>
                         <DesktopNavigation />
@@ -40,7 +41,7 @@ function Layout({ children, title }) {
             </main>
             <footer>
                 <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8 lg:flex lg:justify-between border-t border-black">
-                    <h1 className="lg:w-5/24 lg:pr-1/24"><StaticImage src="../images/logo.jpg" alt="" /></h1>
+                    <h1 className="w-5/24 lg:pr-1/24 mb-4"><StaticImage src="../images/logo.jpg" alt="Titirangi Medical Centre logo" /></h1>
                     <p className="lg:px-1/24">Mon – Fri<br />
                         8am – 5pm</p>
                     <div className="lg:px-1/24">
