@@ -54,7 +54,6 @@ function IndexPage({ data }) {
           </div>
         </section>
       </div>
-
       <section className="bg-black text-white mb-8">
         <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
             <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-8 px-1/24">Latest News</h2>
