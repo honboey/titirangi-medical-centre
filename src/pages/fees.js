@@ -7,44 +7,44 @@ function FeesPage() {
             <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
                 <section className="border-l border-r border-black px-1/24 py-8 mb-24">
                     <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4">Consultation Fees</h2>
-                    <table className="w-full lg:w-8/12">
-                        <tbody className="text-right">
+                    <table className="w-full">
+                        <tbody>
                             <tr className="font-display text-2xl md:text-3xl border-b-2 border-black">
-                                <th scope="col" className="text-right font-light pb-4">Age</th>
+                                <th scope="col" className="text-left font-light pb-4">Age</th>
                                 <th scope="col" className="text-right font-light pb-4">Enrolled</th>
                                 <th scope="col" className="text-right font-light pb-4">Casual</th>
                                 <th scope="col" className="text-right font-light pb-4">CSC</th>
                             </tr>
                             <tr>
                                 <td className="py-4 border-b border-black">0–12</td>
-                                <td className="py-4 border-b border-black">0</td>
-                                <td className="py-4 border-b border-black">55</td>
-                                <td className="py-4 border-b border-black">15</td>
+                                <td className="text-right py-4 border-b border-black">0</td>
+                                <td className="text-right py-4 border-b border-black">55</td>
+                                <td className="text-right py-4 border-b border-black">15</td>
                             </tr>
                             <tr>
                                 <td className="py-4 border-b border-black">13–17</td>
-                                <td className="py-4 border-b border-black">47</td>
-                                <td className="py-4 border-b border-black">55</td>
-                                <td className="py-4 border-b border-black">15</td>
+                                <td className="text-right py-4 border-b border-black">47</td>
+                                <td className="text-right py-4 border-b border-black">55</td>
+                                <td className="text-right py-4 border-b border-black">15</td>
                             </tr>
                             <tr>
                                 <td className="py-4 border-b border-black">18–64</td>
-                                <td className="py-4 border-b border-black">59</td>
-                                <td className="py-4 border-b border-black">85</td>
-                                <td className="py-4 border-b border-black">15</td>
+                                <td className="text-right py-4 border-b border-black">59</td>
+                                <td className="text-right py-4 border-b border-black">85</td>
+                                <td className="text-right py-4 border-b border-black">15</td>
                             </tr>
                             <tr>
                                 <td className="py-4 border-b border-black">65+</td>
-                                <td className="py-4 border-b border-black">50</td>
-                                <td className="py-4 border-b border-black">85</td>
-                                <td className="py-4 border-b border-black">15</td>
+                                <td className="text-right py-4 border-b border-black">50</td>
+                                <td className="text-right py-4 border-b border-black">85</td>
+                                <td className="text-right py-4 border-b border-black">15</td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
                 <section className="border-l border-r border-black px-1/24 py-8 mb-24">
                     <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4">Service fees</h2>
-                    <table className="w-full lg:w-8/12">
+                    <table className="w-full">
                         <tr className="font-display text-2xl md:text-3xl border-b-2 border-black">
                             <th scope="col" className="text-left font-light pb-4">Smears</th>
                             <th scope="col" className="text-right font-light pb-4">Fee ($)</th>

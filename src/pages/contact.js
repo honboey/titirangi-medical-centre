@@ -10,7 +10,7 @@ function ContactPage() {
                     <div className="lg:w-1/2 lg:pr-1/24 lg:border-r lg:border-black">
                         <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal">Contact</h2>
                     </div>
-                    <div className="lg:w-1/2 lg:pl-1/24">
+                <div className="lg:w-1/2 lg:pl-1/24">
                         <h3 className="uppercase leading-snug text-gray-500">Street Address</h3>
                         <p className="font-display text-2xl md:text-3xl mb-4">2 Rangiwai Rd<br />
                             Titrangi<br />
