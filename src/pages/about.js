@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
+import Doctors from "../components/Doctors"
 
 function AboutPage() {
     return (
@@ -19,39 +20,28 @@ function AboutPage() {
                 <section className="mb-12">
                     <h3 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4 ml-1/24">Our doctors</h3>
                     <ul className="lg:flex lg:flex-wrap">
-                        <li className="mb-12 lg:w-4/12 px-1/24">
-                            <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
-                            <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Stephen Wong</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Partner</p>
-                            <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
-                        </li>
-                        <li className="mb-12 lg:w-4/12 px-1/24">
-                            <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
-                            <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Michelle Conning</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Partner<br />
-                                BHB MBCHB FRNZCGP</p>
-                            <p>Our beloved, home-grown "westie" through and through, Michelle's humble beginnings started off in Woodlands Park Primary School. From there, she attended Glen Eden Intermediate, Green Bay High School and studied medicine from the University of Auckland.  Michelle has an interest in all areas of family healthcare. Many would have seen her around at Laingholm Primary School where her children have been attending for the past 10 years and where she is a member of the Board of Trustees.</p>
-                        </li>
-                        <li className="mb-12 lg:w-4/12 px-1/24">
-                            <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
-                            <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Su-Lin Boey</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Partner<br />
-                                BHB MBCHB FRNZCGP</p>
-                            <p>Born in Sydney Australia, Su-Lin came to New Zealand to study medicine at the University of Otago and never looked back. She has a special interest in child health, having a post graduate diploma in child health from the University of Auckland. Now settled in Laingholm, if you don't find Su-Lin at a local beach with her kids, you'll find her trying out a new knitting project (when she has the time).</p>
-                        </li>
-                        <li className="mb-12 lg:w-4/12 px-1/24">
-                            <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
-                            <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Rorie Brown</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Associate</p>
-                            <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
-                        </li>
-                        <li className="mb-8 lg:w-4/12 px-1/24">
-                            <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
-                            <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Vivien Teh</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Associate</p>
-                            <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
-                        </li>
-
+                        <Doctors
+                            name="Dr Stephen Wong"
+                            position="GP Partner"
+                            about="Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum" />
+                        <Doctors
+                            name="Dr Michelle Conning"
+                            position="GP Partner"
+                            qualifications="BHB MBCHB FRNZCGP"
+                            about="Our beloved, home-grown 'westie' through and through, Michelle's humble beginnings started off in Woodlands Park Primary School. From there, she attended Glen Eden Intermediate, Green Bay High School and studied medicine from the University of Auckland.  Michelle has an interest in all areas of family healthcare. Many would have seen her around at Laingholm Primary School where her children have been attending for the past 10 years and where she is a member of the Board of Trustees." />
+                        <Doctors
+                            name="Dr Su-Lin Boey"
+                            position="GP Partner"
+                            qualifications="BHB MBCHB FRNZCGP"
+                            about="Born in Sydney Australia, Su-Lin came to New Zealand to study medicine at the University of Otago and never looked back. She has a special interest in child health, having a post graduate diploma in child health from the University of Auckland. Now settled in Laingholm, if you don't find Su-Lin at a local beach with her kids, you'll find her trying out a new knitting project (when she has the time)." />
+                        <Doctors
+                            name="Dr Rorie Brown"
+                            position="GP Associate"
+                            about="Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum." />
+                        <Doctors
+                            name="Dr Vivien Teh"
+                            position="GP Associate"
+                            about="Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum." />
                     </ul>
                 </section>
 

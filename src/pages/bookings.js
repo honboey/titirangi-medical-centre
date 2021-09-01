@@ -32,7 +32,7 @@ function BookingsPage() {
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
                         <a href="/"><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" className="w-1/3 float-left mr-8"/></a>
                         <p className="mb-4">Our books are currently open and we are taking new enrolments.</p>
-                        <p>Please <a href="#">download this form</a>. Once the form is completed, please email it to <a href="mailto:admin@titirangimc.co.nz">admin@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
+                        <p>Please <a href="/bookings">download this form</a>. Once the form is completed, please email it to <a href="mailto:admin@titirangimc.co.nz">admin@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
                     </div>
                 </section>                
             </div>
