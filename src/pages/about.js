@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 
@@ -12,9 +11,8 @@ function AboutPage() {
                         <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4">About our clinic</h2>
                     </div>
                     <div className="lg:w-1/2 lg:pl-1/24">
-                        <p className="mb-4">At recte se vit ernam remperc hicatquamet venim ent as et eturit, vendae cullaturent vendiciis molorem dolora cusdamenia quam el magnis duci to officto taecae voloreius ario destiae coneceprae dolo tem vene vernatis remqui volaoresequam iumquid magniant.</p>
-                        <p className="mb-4">Imus, to beroressimet eossit atur?</p>
-                        <p className="mb-4">Derum qui voluptam in pro et quam, as se offic temporeium quam laut vellabo. Cest, omnimusande con nulluptati iducimusam ratur? Quisqua spiducipsame mi, qui debis aboribus, imus est, a velitam non porate que eaturep elest, volorep ratur?eostiantio beaquiae si reribus ea cum volupti beatiam volento tatibernatis nime rernam nonsedia dempera cuptat et volorerum rem doloressum consequatum sam, core lam quatium velit dis</p>
+                        <p className="mb-4">Titirangi Medical Centre clinic is a family focused medical practice, commited to offering the highest level of healthcare. We care about our patients and are honoured to be able to look after many generations of West Auckland families. We have achieved  Foundation Accreditation, meaning we have met and maintained a standard of care set by the Royal New Zealand College of General Practitioners. We are affiliated with Procare, meaning we offer our patients 24 hours access to healthcare. A registered nurse answers the phone after hours.</p>
+                        <p className="mb-4">All our doctors have many years of experience as both a General Practitioner and within the hospital system. Most have specialised in General Practice and have achieved or are working towards a Fellowship in General Practice from the Royal New Zealand College of General Practice (FRNZGP).</p>
                     </div>
                 </section>
 
@@ -24,36 +22,33 @@ function AboutPage() {
                         <li className="mb-12 lg:w-4/12 px-1/24">
                             <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
                             <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Stephen Wong</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">General Practionery<br />
-                                Vocationally registered</p>
+                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Partner</p>
                             <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
                         </li>
                         <li className="mb-12 lg:w-4/12 px-1/24">
                             <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
                             <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Michelle Conning</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">General Practionery<br />
-                                Vocationally registered</p>
-                            <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
+                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Partner<br />
+                                BHB MBCHB FRNZCGP</p>
+                            <p>Our beloved, home-grown "westie" through and through, Michelle's humble beginnings started off in Woodlands Park Primary School. From there, she attended Glen Eden Intermediate, Green Bay High School and studied medicine from the University of Auckland.  Michelle has an interest in all areas of family healthcare. Many would have seen her around at Laingholm Primary School where her children have been attending for the past 10 years and where she is a member of the Board of Trustees.</p>
                         </li>
                         <li className="mb-12 lg:w-4/12 px-1/24">
                             <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
                             <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Su-Lin Boey</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">General Practionery<br />
-                                Vocationally registered</p>
+                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Partner<br />
+                                BHB MBCHB FRNZCGP</p>
+                            <p>Born in Sydney Australia, Su-Lin came to New Zealand to study medicine at the University of Otago and never looked back. She has a special interest in child health, having a post graduate diploma in child health from the University of Auckland. Now settled in Laingholm, if you don't find Su-Lin at a local beach with her kids, you'll find her trying out a new knitting project (when she has the time).</p>
+                        </li>
+                        <li className="mb-12 lg:w-4/12 px-1/24">
+                            <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
+                            <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Rorie Brown</h4>
+                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Associate</p>
                             <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
                         </li>
                         <li className="mb-8 lg:w-4/12 px-1/24">
                             <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
                             <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Vivien Teh</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">General Practionery<br />
-                                Vocationally registered</p>
-                            <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
-                        </li>
-                        <li className="mb-12 lg:w-4/12 px-1/24">
-                            <StaticImage className="mb-4 w-1/2 lg:w-full" src="../images/profile.jpg" />
-                            <h4 className="font-display text-2xl md:text-3xl mb-4">Dr Rorie Brown</h4>
-                            <p className="uppercase leading-snug text-gray-500 mb-4">General Practionery<br />
-                                Vocationally registered</p>
+                            <p className="uppercase leading-snug text-gray-500 mb-4">GP Associate</p>
                             <p>Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum</p>
                         </li>
 
@@ -69,8 +64,8 @@ function AboutPage() {
                         </figure>
                     </div>
                     <div className="lg:w-1/2">
-                        <h4 className="font-display text-2xl md:text-3xl mb-4">Nam, sitas solorem quam</h4>
-                        <p>Eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum que que nobis eribea ducienectis pla volor alicid ullam am ium et ommo cusandi andebitibus. Perectempos am faccus expliquae pos sit que dolor simil eari delendi genimi, nam faccupt ationsequam rerumet harcia alibus aligendaes ut aut quam.</p>
+                        <h4 className="font-display text-2xl md:text-3xl mb-4">Out team</h4>
+                        <p>Our very capable nursing team is lead by nurse manager, Lauren Santoromito. They have years of experience in chronic care management, immunisations, infusions, liquid nitrogen, injections and complicated wound dressings. Our friendly administration team is lead by practice manager, Rowena Coleman who are more than happy to answer your questions or guide you in the right direction.</p>
                     </div>
                 </section>
 
@@ -83,25 +78,26 @@ function AboutPage() {
                         <div className="w-8/12 lg:w-full pl-1/24 lg:pl-0 py-6 mb-8 border-l border-black lg:border-0">
                             <h3 className="font-display text-2xl md:text-3xl mb-4">Services</h3>
                             <ul>
-                                <li>General Medical</li>
-                                <li>Consultation</li>
-                                <li>Accident Care </li>
-                                <li>Well Man & Woman Checks</li>
-                                <li>Skin Cancer Check </li>
-                                <li>ECG’s </li>
+                                <li>General Medical Consultations</li>
+                                <li>Accident and wound care</li>
+                                <li>Well Persons and Child Checks</li>
+                                <li>Skin Cancer Checks</li>
+                                <li>ECG’s</li>
                                 <li>Minor Surgery</li>
-                                <li>Well Child Checks Family Planning Acupuncture</li>
-                                <li>Cardiovascular</li>
-                                <li>Management</li>
-                                <li>Diabetes</li>
-                                <li>Management</li>
-                                <li>Holistic/Herbal/Nutritional</li>
-                                <li>Medicine</li>
-                                <li>Sexual Health Travel Care Flu Vaccinations</li>
-                                <li>Childhood immunisations Dressings</li>
+                                <li>Family Planning</li>
+                                <li>Cardiovascular Management</li>
+                                <li>Diabetes Management</li>
+                                <li>Sexual Health</li>
+                                <li>LGBTQIA+ health</li>
+                                <li>Travel Care</li>
+                                <li>Flu Vaccinations</li>
+                                <li>Childhood immunisations</li>
+                                <li>Dressings</li>
                                 <li>Liquid Nitrogen</li>
-                                <li>Smoking Cessation Support Weight Management </li>
-                                <li>Laser</li>
+                                <li>Smoking Cessation Support</li>
+                                <li>Weight Management</li>
+                                <li>Iron and aclasta infusions</li>
+                                <li>Drivers licence medicals</li>
                             </ul>
                         </div>
                     </div>
