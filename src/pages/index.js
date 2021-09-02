@@ -1,8 +1,11 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import News from "../components/News"
+import { RichText } from 'prismic-reactjs'
+import htmlSerializer from "../utilities/htmlSerializer"
+import CustomLink from "../utilities/CustomLink"
 
 function IndexPage({ data }) {
   return (
@@ -11,10 +14,9 @@ function IndexPage({ data }) {
 
         <section className="border-r border-l border-black pl-1/24 pr-1/24 mb-8">
           <div className="py-8 lg:flex">
-            <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal lg:w-8/12 lg:border-r lg:border-black lg:pr-1/24 mb-8">For over seventy years, Titirangi Medical Centre  has been committed to taking care of generations of west auckland families.</p>
+            <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal lg:w-8/12 lg:border-r lg:border-black lg:pr-1/24 mb-8">{data.prismicHomepage.data.headline.text}</p>
             <div className="lg:w-4/12 lg:px-1/24 lg:pt-8">
-              <p className="mb-4">Titirangi Medical Centre is a family friendly medical centre consisting of 5 fully trained GPs, nursing and admin staff. We aim to offer the highest quality healthcare for the whole family.</p>
-              <p><Link to="/about">Learn more about us</Link></p>
+              <RichText htmlSerializer={htmlSerializer} serializeHyperlink={CustomLink} render={data.prismicHomepage.data.lede.raw} />
             </div>
           </div>
         </section>
@@ -57,13 +59,31 @@ function IndexPage({ data }) {
             </div>
           </div>
         </section>
-      </div> 
+      </div>
 
       <News />
-      
+
     </Layout>
   )
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query HomepageQuery {
+    prismicHomepage {
+      data {
+        headline {
+          text
+        }
+        lede {
+          raw
+        }
+        our_clinic {
+          raw
+        }
+      }
+    }
+  }
+`
 

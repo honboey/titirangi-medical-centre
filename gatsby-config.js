@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://http://www.titirangimc.co.nz/",
@@ -30,6 +34,20 @@ module.exports = {
       options: {
         icon: "./src/images/favicon.png"
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `titirangimedicalcentre`,
+        accessToken: `${process.env.API_KEY}`,
+        linkResolver: require('./src/utilities/linkResolver').linkResolver,
+        schemas: {
+          homepage: require("./custom_types/homepage.json"),
+          about: require("./custom_types/about.json"),
+          page: require("./custom_types/page.json"),
+          fees: require("./custom_types/fees.json"),
+        },
+      },
+    },
   ],
 };
