@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Link } from 'gatsby'
-import { linkResolver } from './LinkResolver'
+import { linkResolver } from './linkResolver'
 
 export const CustomLink = (type, element, content, children, index) => {
   if (element.data.link_type === 'Document') {
