@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import News from "../components/News"
 import { RichText } from 'prismic-reactjs'
 import htmlSerializer from "../utilities/htmlSerializer"
-import CustomLink from "../utilities/CustomLink"
+import { CustomLink } from "../utilities/CustomLink"
 
 function IndexPage({ data }) {
   const doc = data.prismicHomepage.data
