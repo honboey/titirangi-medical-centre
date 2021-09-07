@@ -1,131 +1,124 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "config" : {
-        "label" : "slug",
-        "placeholder" : "url of the page"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "slug",
+        "placeholder": "url of the page"
       }
     },
-    "page_title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading2",
-        "label" : "Page title",
-        "placeholder" : "about"
+    "page_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Page title",
+        "placeholder": "about"
       }
     },
-    "page_introduction" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph,hyperlink",
-        "label" : "Page introduction"
+    "page_introduction": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, hyperlink",
+        "label": "Page introduction",
+        "placeholder": "Place a brief descirptor about the page here"
       }
     },
-    "our_doctors" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading3",
-        "label" : "Our doctors",
-        "placeholder" : "Our doctors"
+    "staff_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Staff image"
       }
     },
-    "staff_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : { },
-        "thumbnails" : [ ],
-        "label" : "Staff image"
+    "staff": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,heading3,heading4,hyperlink",
+        "label": "Staff",
+        "placeholder": "staff"
       }
     },
-    "staff" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph,heading3,heading4,hyperlink",
-        "label" : "Staff",
-        "placeholder" : "staff"
+    "services_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Services image"
       }
     },
-    "services_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : { },
-        "thumbnails" : [ ],
-        "label" : "Services image"
+    "services": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading4, list-item",
+        "label": "services",
+        "placeholder": "List of services provided"
       }
     },
-    "services" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph,heading4,list-item",
-        "label" : "services",
-        "placeholder" : "Services"
+    "history": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading3, hyperlink, list-item",
+        "label": "history",
+        "placeholder": "Our history"
       }
     },
-    "history" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph,heading3,hyperlink,list-item",
-        "label" : "history",
-        "placeholder" : "Our history"
-      }
-    },
-    "body" : {
-      "type" : "Slices",
-      "fieldset" : "Slice zone",
-      "config" : {
-        "labels" : null,
-        "choices" : {
-          "doctor_profiles" : {
-            "type" : "Slice",
-            "fieldset" : "Doctor profiles",
-            "description" : "Doctor headshot and bio",
-            "icon" : "person",
-            "display" : "list",
-            "non-repeat" : {
-              "headshot" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : {
-                    "width" : 800,
-                    "height" : 1000
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "doctor_profiles": {
+            "type": "Slice",
+            "fieldset": "Doctor profiles",
+            "description": "Doctor headshot and bio",
+            "icon": "person",
+            "display": "list",
+            "non-repeat": {
+              "headshot": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 800,
+                    "height": 1000
                   },
-                  "thumbnails" : [ ],
-                  "label" : "headshot"
+                  "thumbnails": [],
+                  "label": "headshot"
                 }
               },
-              "doctor_s_name" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "single" : "heading4",
-                  "label" : "Doctor's name"
+              "doctor_s_name": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading4",
+                  "label": "Doctor's name"
                 }
               },
-              "doctor_position" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "single" : "heading5",
-                  "label" : "Doctor position",
-                  "placeholder" : "e.g GP Partner"
+              "doctor_position": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading5",
+                  "label": "Doctor position",
+                  "placeholder": "e.g GP Partner"
                 }
               },
-              "doctor_qualifications" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "single" : "heading5",
-                  "label" : "Doctor qualifications",
-                  "placeholder" : "e.g BHB MBCHB FRNZCGP"
+              "doctor_qualifications": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading5",
+                  "label": "Doctor qualifications",
+                  "placeholder": "e.g BHB MBCHB FRNZCGP"
                 }
               },
-              "doctor_bio" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "single" : "paragraph,hyperlink",
-                  "label" : "Doctor bio"
+              "doctor_bio": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,hyperlink",
+                  "label": "Doctor bio"
                 }
               }
             },
-            "repeat" : { }
+            "repeat": {}
           }
         }
       }
