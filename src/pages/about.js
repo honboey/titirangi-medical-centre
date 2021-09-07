@@ -9,7 +9,6 @@ import Doctors from "../components/Doctors"
 
 function AboutPage({ data }) {
     const doc = data.prismicAbout.data
-    console.log(doc)
 
     return (
         <Layout title=" | About">

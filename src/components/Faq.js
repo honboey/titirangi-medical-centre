@@ -1,10 +1,9 @@
 import React, { useState } from "react"
 
-function Question(props) {
-    const [FaqOpen, setFaqOpen] = useState(false);
+function Faq(props) {
+    const [faqOpen, setFaqOpen] = useState(false);
     function toggleFaq() {
-        console.log("toggleFaq!")
-        return setFaqOpen(!FaqOpen)
+        return setFaqOpen(!faqOpen)
     }
 
     return (
@@ -19,9 +18,9 @@ function Question(props) {
                     <h3 className="font-display text-2xl md:text-3xl">{props.question}</h3>
                 </button>
             </div>
-            <p className={FaqOpen ? "ml-1/12 lg:w-7/12" : "hidden"}>{props.answer}</p>
+            <p className={faqOpen ? "ml-1/12 lg:w-7/12" : "hidden"}>{props.answer}</p>
         </li>
     )
 }
 
-export default Question
+export default Faq

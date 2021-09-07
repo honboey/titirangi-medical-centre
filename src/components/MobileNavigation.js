@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 function MobileNavigation() {
     const [navOpen, setNavOpen] = useState(false);
     function toggleNav() {
-        console.log(navOpen)
         return setNavOpen(!navOpen)
     }
 

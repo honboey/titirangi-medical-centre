@@ -1,5 +1,5 @@
 
-// LinkResolver.js file
+// linkResolver.js file
 
 exports.linkResolver = (doc) => {
   if (doc.type === 'about') {
