@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function Faq(props) {
+function Question(props) {
     const [FaqOpen, setFaqOpen] = useState(false);
     function toggleFaq() {
         console.log("toggleFaq!")
@@ -24,4 +24,4 @@ function Faq(props) {
     )
 }
 
-export default Faq
+export default Question
