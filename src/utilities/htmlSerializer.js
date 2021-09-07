@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { Elements } from 'prismic-richtext'
 import { Link as PrismicLink } from 'prismic-reactjs'
-import linkResolver from './linkResolver'
+import { linkResolver } from './linkResolver'
 
 
 // -- HTML Serializer
