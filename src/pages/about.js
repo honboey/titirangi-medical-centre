@@ -128,9 +128,6 @@ export const query = graphql`
         page_introduction {
             raw
         }
-        our_doctors {
-            raw
-          }
         body {
             ... on PrismicAboutDataBodyDoctorProfiles {
               id

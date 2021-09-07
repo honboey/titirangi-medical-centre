@@ -9,7 +9,6 @@ import CustomLink from "../utilities/CustomLink"
 
 function IndexPage({ data }) {
   const doc = data.prismicHomepage.data
-  console.log(doc)
 
   return (
     <Layout title="">
