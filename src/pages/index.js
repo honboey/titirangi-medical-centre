@@ -1,5 +1,5 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import News from "../components/News"
@@ -8,22 +8,25 @@ import htmlSerializer from "../utilities/htmlSerializer"
 import CustomLink from "../utilities/CustomLink"
 
 function IndexPage({ data }) {
+const doc = data.prismicHomepage.data
+console.log(doc)
+
   return (
     <Layout title="">
       <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
 
         <section className="border-r border-l border-black pl-1/24 pr-1/24 mb-8">
           <div className="py-8 lg:flex">
-            <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal lg:w-8/12 lg:border-r lg:border-black lg:pr-1/24 mb-8">{data.prismicHomepage.data.headline.text}</p>
+            <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal lg:w-8/12 lg:border-r lg:border-black lg:pr-1/24 mb-8">{doc.headline.text}</p>
             <div className="lg:w-4/12 lg:px-1/24 lg:pt-8">
-              <RichText htmlSerializer={htmlSerializer} serializeHyperlink={CustomLink} render={data.prismicHomepage.data.lede.raw} />
+              <RichText htmlSerializer={htmlSerializer} serializeHyperlink={CustomLink} render={doc.lede.raw} />              
             </div>
           </div>
         </section>
 
         <section className="mb-8">
           <figure className="mb-4 w-full lg:w-21/24">
-            <StaticImage src="../images/clinic.jpg" alt="External shot of the Titirangi clinic, overlooking the Waitekere ranges" />
+            <GatsbyImage image={doc.clinic_image.gatsbyImageData} alt={doc.clinic_image.alt} />
             <figcaption className="text-xs">Photo by Phil Botha</figcaption>
           </figure>
           <div className="flex justify-end">
@@ -36,7 +39,7 @@ function IndexPage({ data }) {
 
         <section className="lg:w-11/12 lg:mx-auto lg:flex lg:items-center mb-8">
           <figure className="mb-4 w-full lg:w-14/22 lg:order-2 lg:border-l lg:border-black lg:pl-1/22 lg:pt-4">
-            <StaticImage className="" src="../images/silver-fern.jpg" alt="Silver fern" />
+          <GatsbyImage image={doc.new_patients_image.gatsbyImageData} alt={doc.new_patients_image.alt} />
             <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
           </figure>
           <div className="flex justify-end lg:w-8/22 lg:pr-1/22 lg:order-1">
@@ -49,7 +52,7 @@ function IndexPage({ data }) {
 
         <section className="lg:w-11/12 lg:mx-auto lg:flex lg:items-center mb-8">
           <figure className="mb-4 w-full lg:w-14/22 lg:border-r lg:border-black lg:pr-1/22 lg:pt-4">
-            <StaticImage className="" src="../images/waitakere-beach.jpg" alt="Waitakere beach" />
+          <GatsbyImage image={doc.information_image.gatsbyImageData} alt={doc.information_image.alt} />
             <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
           </figure>
           <div className="flex justify-end lg:w-8/22 lg:pl-1/22">
@@ -79,7 +82,25 @@ export const query = graphql`
         lede {
           raw
         }
+        clinic_image {
+          alt
+          gatsbyImageData
+        }
         our_clinic {
+          raw
+        }
+        new_patients_image {
+          alt
+          gatsbyImageData
+        }
+        new_patients {
+          raw
+        }
+        information_image {
+          alt
+          gatsbyImageData
+        }
+        information {
           raw
         }
       }

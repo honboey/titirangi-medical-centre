@@ -1,34 +1,10 @@
+
+// LinkResolver.js file
+
 exports.linkResolver = (doc) => {
-    // URL for a category type
-    if (doc.type === 'category') {
-      return `/category/${doc.uid}`
-    }
-  
-    // URL for a product type
-    if (doc.type === 'product') {
-      return `/product/${doc.uid}`
-    }
-  
-    // URL for a page type
-    if (doc.type === 'About') {
-      return `/${doc.uid}`
-    }
-   
-    // URL for a page type
-    if (doc.type === 'single') {
-      return `/${doc.uid}`
-    }
- 
-    // URL for a page type
-    if (doc.type === 'Single') {
-      return `/${doc.uid}`
-    }
-   
-    // URL for a page type
-    if (doc.type === 'page') {
-      return `/${doc.uid}`
-    }
-  
-    // Backup for all other types
-    return '/'
+  if (doc.type === 'about') {
+    return `/${doc.uid}`
   }
+
+  return '/'
+}
