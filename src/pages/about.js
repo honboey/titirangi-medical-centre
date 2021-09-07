@@ -1,47 +1,44 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
+import { RichText } from 'prismic-reactjs'
+import htmlSerializer from "../utilities/htmlSerializer"
+import CustomLink from "../utilities/CustomLink"
 import Layout from "../components/Layout"
 import Doctors from "../components/Doctors"
 
-function AboutPage() {
+function AboutPage({ data }) {
+    const doc = data.prismicAbout.data
+    console.log(doc)
+
     return (
         <Layout title=" | About">
             <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
                 <section className="border-l border-r border-black px-1/24 py-8 mb-8 lg:flex">
                     <div className="lg:w-1/2 lg:pr-1/24 lg:border-r lg:border-black">
-                        <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4">About our clinic</h2>
+                        <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4">{doc.page_title.raw[0].text}</h2>
                     </div>
                     <div className="lg:w-1/2 lg:pl-1/24">
-                        <p className="mb-4">Titirangi Medical Centre clinic is a family focused medical practice, commited to offering the highest level of healthcare. We care about our patients and are honoured to be able to look after many generations of West Auckland families. We have achieved  Foundation Accreditation, meaning we have met and maintained a standard of care set by the Royal New Zealand College of General Practitioners. We are affiliated with Procare, meaning we offer our patients 24 hours access to healthcare. A registered nurse answers the phone after hours.</p>
-                        <p className="mb-4">All our doctors have many years of experience as both a General Practitioner and within the hospital system. Most have specialised in General Practice and have achieved or are working towards a Fellowship in General Practice from the Royal New Zealand College of General Practice (FRNZGP).</p>
+                        <RichText htmlSerializer={htmlSerializer} serializeHyperlink={CustomLink} render={doc.page_introduction.raw} />
                     </div>
                 </section>
 
                 <section className="mb-12">
                     <h3 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4 ml-1/24">Our doctors</h3>
                     <ul className="lg:flex lg:flex-wrap">
-                        <Doctors
-                            name="Dr Stephen Wong"
-                            position="GP Partner"
-                            about="Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum" />
-                        <Doctors
-                            name="Dr Michelle Conning"
-                            position="GP Partner"
-                            qualifications="BHB MBCHB FRNZCGP"
-                            about="Our beloved, home-grown 'westie' through and through, Michelle's humble beginnings started off in Woodlands Park Primary School. From there, she attended Glen Eden Intermediate, Green Bay High School and studied medicine from the University of Auckland.  Michelle has an interest in all areas of family healthcare. Many would have seen her around at Laingholm Primary School where her children have been attending for the past 10 years and where she is a member of the Board of Trustees." />
-                        <Doctors
-                            name="Dr Su-Lin Boey"
-                            position="GP Partner"
-                            qualifications="BHB MBCHB FRNZCGP"
-                            about="Born in Sydney Australia, Su-Lin came to New Zealand to study medicine at the University of Otago and never looked back. She has a special interest in child health, having a post graduate diploma in child health from the University of Auckland. Now settled in Laingholm, if you don't find Su-Lin at a local beach with her kids, you'll find her trying out a new knitting project (when she has the time)." />
-                        <Doctors
-                            name="Dr Rorie Brown"
-                            position="GP Associate"
-                            about="Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum." />
-                        <Doctors
-                            name="Dr Vivien Teh"
-                            position="GP Associate"
-                            about="Nam, sitas solorem quam eos erehendest omniendisit que cone porepudam enisci sequi cus voluptias des del id que parum natur aut experum endigni con reprerro esecta voluptat molupta sinciet que pa consequam quae rem que prepere pellorum experum." />
+                        {doc.body.map((element, index) => {
+                            return (
+                                <Doctors
+                                    key={element.id}
+                                    image={element.primary.headshot.gatsbyImageData}
+                                    alt={element.primary.headshot.alt}
+                                    name={element.primary.doctor_s_name.text}
+                                    position={element.primary.doctor_position.text}
+                                    qualifications={element.primary.doctor_qualifications.text}
+                                    about={element.primary.doctor_bio.raw}
+                                />
+                            )
+                        })}
                     </ul>
                 </section>
 
@@ -116,9 +113,64 @@ function AboutPage() {
                     </div>
                 </section>
             </div>
-
         </Layout>
     )
 }
 
 export default AboutPage
+
+export const query = graphql`
+  query AboutQuery {
+    prismicAbout {
+      data {
+        page_title {
+            raw
+          }
+        page_introduction {
+            raw
+        }
+        our_doctors {
+            raw
+          }
+        body {
+            ... on PrismicAboutDataBodyDoctorProfiles {
+              id
+              primary {
+                doctor_bio {
+                  raw
+                }
+                doctor_position {
+                  text
+                }
+                doctor_qualifications {
+                  text
+                }
+                doctor_s_name {
+                  text
+                }
+                headshot {
+                  alt
+                  gatsbyImageData
+                }
+              }
+            }
+          }
+        services_image {
+            gatsbyImageData
+          } 
+        services {
+            raw
+          }
+        history {
+          raw
+        }
+        staff_image {
+            gatsbyImageData
+          }
+        staff {
+          raw
+        }
+      }
+    }
+  }
+`

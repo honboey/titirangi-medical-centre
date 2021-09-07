@@ -11,8 +11,11 @@ const htmlSerializer = function (type, element, content, children, key) {
 
     case Elements.paragraph: // Paragraph
       return <p key={key} className="mb-4">{children}</p>
-    
-      case Elements.hyperlink: // Hyperlinks
+
+    case Elements.heading3: // Heading 3
+      return <h3 key={key} className="font-display text-2xl md:text-3xl mb-4">{children}</h3>
+
+    case Elements.hyperlink: // Hyperlinks
       const url = PrismicLink.url(element.data, linkResolver)
 
       if (element.data.link_type === 'Document') {
