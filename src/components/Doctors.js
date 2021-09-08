@@ -2,7 +2,6 @@ import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RichText } from 'prismic-reactjs'
 import htmlSerializer from "../utilities/htmlSerializer"
-import CustomLink from "../utilities/CustomLink"
 
 function Doctors(props) {
     return (
@@ -12,7 +11,7 @@ function Doctors(props) {
             <p className="uppercase leading-snug text-gray-500 mb-4">
                 {props.position}<br />
                 {props.qualifications}</p>
-            <RichText htmlSerializer={htmlSerializer} serializeHyperlink={CustomLink} render={props.about} />
+            <RichText htmlSerializer={htmlSerializer} render={props.about} />
         </li>
     )
 }

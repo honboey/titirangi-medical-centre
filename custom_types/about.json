@@ -18,7 +18,7 @@
     "page_introduction": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, hyperlink",
+        "multi": "paragraph,hyperlink",
         "label": "Page introduction",
         "placeholder": "Place a brief descirptor about the page here"
       }
@@ -34,7 +34,7 @@
     "staff": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph,heading3,heading4,hyperlink",
+        "multi": "paragraph,heading4,hyperlink",
         "label": "Staff",
         "placeholder": "staff"
       }
@@ -50,7 +50,7 @@
     "services": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, heading4, list-item",
+        "multi": "paragraph,heading4,list-item",
         "label": "services",
         "placeholder": "List of services provided"
       }
@@ -58,7 +58,7 @@
     "history": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, heading3, hyperlink, list-item",
+        "multi": "paragraph, hyperlink, list-item",
         "label": "history",
         "placeholder": "Our history"
       }
