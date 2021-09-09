@@ -1,12 +1,37 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import News from "../components/News"
+import Announcements from "../components/Announcements"
 import Faq from "../components/Faq"
 
-function NewsPage() {
+
+function NewsPage({ data }) {
+    const doc = data.prismicNewsAndInformations.data
+    const announcements = doc.body.filter(element => element.slice_type === "news")
+    const faq = doc.body.filter(element => element.slice_type === "clinic_information")
+
     return (
         <Layout title=" | News & Information">
-            <News />
+            <section>
+                <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
+                    <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal px-1/24">Latest News</h2>
+                </div>
+                <div className="bg-black text-white mb-8">
+                    <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
+                        <div className="lg:flex lg:flex-wrap lg:justify-between lg:border-r lg:border-l lg:border-white px-1/24">
+                            {announcements.map((element) => {
+                                return (
+                                    <Announcements
+                                        heading={element.primary.announcement_title.raw[0].text}
+                                        timestamp={element.primary.date_of_announcement}
+                                        body={element.primary.announcement.raw[0].text}
+                                    />
+                                )
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
                 <section className="px-1/24 border-l border-r border-black">
@@ -56,7 +81,7 @@ function NewsPage() {
                         />
                         <Faq
                             question="How can I make a complaint?"
-                            answer=" We appreciate all feedback, good and bad. Please talk to your GP or practice manager who will be happy to listen and guide you through this process." />
+                            answer="We appreciate all feedback, good and bad. Please talk to your GP or practice manager who will be happy to listen and guide you through this process." />
                     </ul>
                 </section>
             </div>
@@ -65,3 +90,40 @@ function NewsPage() {
 }
 
 export default NewsPage
+
+export const query = graphql`
+  query NewsQuery {
+    prismicNewsAndInformations {
+      data {
+        body {
+          ... on PrismicNewsAndInformationsDataBodyNews {
+            id
+            primary {
+              date_of_announcement(formatString: "DD MMMM YYYY")
+              featured
+              announcement_title {
+                raw
+              }
+              announcement {
+                raw
+              }
+            }
+            slice_type
+          }
+          ... on PrismicNewsAndInformationsDataBodyClinicInformation {
+            id
+            primary {
+              faq_answer {
+                raw
+              }
+              faq_question {
+                raw
+              }
+            }
+            slice_type
+          }
+        }
+      }
+    }
+  }
+`

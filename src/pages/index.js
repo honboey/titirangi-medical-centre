@@ -2,7 +2,7 @@ import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import News from "../components/News"
+import Announcements from "../components/Announcements"
 import { RichText } from 'prismic-reactjs'
 import HtmlSerializer from "../utilities/HtmlSerializer"
 
@@ -59,7 +59,7 @@ function IndexPage({ data }) {
           </div>
         </section>
       </div>
-      <News />
+      <Announcements />
     </Layout>
   )
 }

@@ -44,6 +44,7 @@ module.exports = {
         schemas: {
           homepage: require("./custom_types/homepage.json"),
           about: require("./custom_types/about.json"),
+          news_and_informations: require("./custom_types/news_and_informations.json"),
         },
       },
     },
