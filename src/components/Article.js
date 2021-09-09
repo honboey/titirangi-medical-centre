@@ -1,6 +1,6 @@
 import React from "react"
 import { RichText } from 'prismic-reactjs'
-import htmlSerializer from "../utilities/htmlSerializer"
+import HtmlSerializer from "../utilities/HtmlSerializer"
 
 function Article(props) {
     return (
@@ -9,7 +9,7 @@ function Article(props) {
                 <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4">{props.heading}</h2>
             </div>
             <div className="lg:w-1/2 lg:pl-1/24">
-                <RichText htmlSerializer={htmlSerializer} render={props.body} />
+                <RichText htmlSerializer={HtmlSerializer} render={props.body} />
             </div>
         </section>
     )

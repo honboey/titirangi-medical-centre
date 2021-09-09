@@ -2,7 +2,7 @@ import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import { RichText } from 'prismic-reactjs'
-import htmlSerializer from "../utilities/htmlSerializer"
+import HtmlSerializer from "../utilities/HtmlSerializer"
 import Layout from "../components/Layout"
 import Article from "../components/Article"
 import Doctors from "../components/Doctors"
@@ -44,7 +44,7 @@ function AboutPage({ data }) {
             </figure>
           </div>
           <div className="lg:w-1/2">
-            <RichText htmlSerializer={htmlSerializer} render={doc.staff.raw} />
+            <RichText htmlSerializer={HtmlSerializer} render={doc.staff.raw} />
           </div>
         </section>
 
@@ -55,7 +55,7 @@ function AboutPage({ data }) {
           </figure>
           <div className="flex justify-end lg:w-8/22 lg:pl-1/22">
             <div className="w-8/12 lg:w-full pl-1/24 lg:pl-0 py-6 mb-8 border-l border-black lg:border-0">
-              <RichText htmlSerializer={htmlSerializer} render={doc.services.raw} />
+              <RichText htmlSerializer={HtmlSerializer} render={doc.services.raw} />
             </div>
           </div>
         </section>     

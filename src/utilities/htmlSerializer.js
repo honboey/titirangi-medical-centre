@@ -2,10 +2,10 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { Elements } from 'prismic-richtext'
 import { Link as PrismicLink } from 'prismic-reactjs'
-import { linkResolver } from './linkResolver'
+import { LinkResolver } from './LinkResolver'
 
 // -- HTML Serializer
-const htmlSerializer = function (type, element, content, children, key) {
+function HtmlSerializer(type, element, content, children, key) {
   switch (type) {
 
     case Elements.paragraph: // Paragraph
@@ -18,7 +18,7 @@ const htmlSerializer = function (type, element, content, children, key) {
       return <h4 key={key} className="font-display text-2xl md:text-3xl mb-4">{children}</h4>
 
     case Elements.hyperlink: // Hyperlinks
-      const url = PrismicLink.url(element.data, linkResolver)
+      const url = PrismicLink.url(element.data, LinkResolver)
 
       if (element.data.link_type === 'Document') {
         return (
@@ -27,7 +27,6 @@ const htmlSerializer = function (type, element, content, children, key) {
           </Link>
         )
       }
-
       return (
         <a
           key={key}
@@ -49,4 +48,4 @@ const htmlSerializer = function (type, element, content, children, key) {
   }
 }
 
-export default htmlSerializer
+export default HtmlSerializer

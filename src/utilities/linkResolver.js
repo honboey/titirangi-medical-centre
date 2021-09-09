@@ -1,7 +1,6 @@
-
 // linkResolver.js file
 
-exports.linkResolver = (doc) => {
+exports.LinkResolver = (doc) => {
   if (doc.type === 'about') {
     return `/${doc.uid}`
   }

@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import News from "../components/News"
 import { RichText } from 'prismic-reactjs'
-import htmlSerializer from "../utilities/htmlSerializer"
+import HtmlSerializer from "../utilities/HtmlSerializer"
 
 function IndexPage({ data }) {
   const doc = data.prismicHomepage.data
@@ -17,7 +17,7 @@ function IndexPage({ data }) {
           <div className="py-8 lg:flex">
             <p className="font-display text-4xl md:text-6xl leading-snug md:leading-normal lg:w-8/12 lg:border-r lg:border-black lg:pr-1/24 mb-8">{doc.headline.text}</p>
             <div className="lg:w-4/12 lg:px-1/24 lg:pt-8">
-              <RichText htmlSerializer={htmlSerializer} render={doc.lede.raw} />
+              <RichText htmlSerializer={HtmlSerializer} render={doc.lede.raw} />
             </div>
           </div>
         </section>
@@ -42,7 +42,7 @@ function IndexPage({ data }) {
           </figure>
           <div className="flex justify-end lg:w-8/22 lg:pr-1/22 lg:order-1">
             <div className="w-8/12 lg:w-full pl-1/24 lg:pl-0 py-6 mb-8 border-l border-black lg:border-0">
-              <RichText htmlSerializer={htmlSerializer} render={doc.new_patients.raw} />
+              <RichText htmlSerializer={HtmlSerializer} render={doc.new_patients.raw} />
             </div>
           </div>
         </section>
@@ -54,7 +54,7 @@ function IndexPage({ data }) {
           </figure>
           <div className="flex justify-end lg:w-8/22 lg:pl-1/22">
             <div className="w-8/12 lg:w-full pl-1/24 lg:pl-0 py-6 mb-8 border-l border-black lg:border-0">
-            <RichText htmlSerializer={htmlSerializer} render={doc.information.raw} />
+            <RichText htmlSerializer={HtmlSerializer} render={doc.information.raw} />
             </div>
           </div>
         </section>
