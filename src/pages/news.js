@@ -12,26 +12,7 @@ function NewsPage({ data }) {
 
     return (
         <Layout title=" | News & Information">
-            <section>
-                <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
-                    <h2 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal px-1/24">Latest News</h2>
-                </div>
-                <div className="bg-black text-white mb-8">
-                    <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
-                        <div className="lg:flex lg:flex-wrap lg:justify-between lg:border-r lg:border-l lg:border-white px-1/24">
-                            {announcements.map((element) => {
-                                return (
-                                    <Announcements
-                                        heading={element.primary.announcement_title.raw[0].text}
-                                        timestamp={element.primary.date_of_announcement}
-                                        body={element.primary.announcement.raw[0].text}
-                                    />
-                                )
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Announcements />
 
             <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
                 <section className="px-1/24 border-l border-r border-black">
