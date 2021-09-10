@@ -1,6 +1,35 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { RichText } from "prismic-reactjs"
+import HtmlSerializer from "../utilities/HtmlSerializer"
 
 function Announcements() {
+    const data = useStaticQuery(graphql`
+        query AnnouncementsQuery {
+            prismicNewsAndInformations {
+                data {
+                    body {
+                        ... on PrismicNewsAndInformationsDataBodyNews {
+                            id
+                            primary {
+                            announcement {
+                                raw
+                            }
+                            announcement_title {
+                                text
+                            }
+                            date_of_announcement(formatString: "DD MMMM YYYY")
+                            featured
+                            }
+                            slice_type
+                        }
+                    }
+                }
+            }
+        }
+    `)
+    const announcementsArray = data.prismicNewsAndInformations.data.body.filter(element => element.slice_type === "news")
+
     return (
         <section>
             <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
@@ -9,28 +38,25 @@ function Announcements() {
             <div className="bg-black text-white mb-8">
                 <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
                     <div className="lg:flex lg:flex-wrap lg:justify-between lg:border-r lg:border-l lg:border-white px-1/24">
-
-                        <article className="lg:w-11/24 py-8 lg:mr-1/24 border-b border-white">
-                            <h3 className="font-display text-2xl md:text-3xl">Test heading</h3>
-                            <time className="uppercase block mb-4 text-gray-400">18 September, 2021</time>
-                            <p className="mb-4">Lorem ipsum of some text that chills here.</p>
-                        </article>
-                        <article className="lg:w-11/24 py-8 lg:ml-1/24 border-b border-white">
-                            <h3 className="font-display text-2xl md:text-3xl">Test heading</h3>
-                            <time className="uppercase block mb-4 text-gray-400">18 September, 2021</time>
-                            <p className="mb-4">Lorem ipsum of some text that chills here.</p>
-                        </article>
-                        <article className="lg:w-11/24 py-8 lg:mr-1/24 border-b border-white">
-                            <h3 className="font-display text-2xl md:text-3xl">Test heading</h3>
-                            <time className="uppercase block mb-4 text-gray-400">18 September, 2021</time>
-                            <p className="mb-4">Lorem ipsum of some text that chills here.</p>
-                        </article>
-                        <article className="lg:w-11/24 py-8 lg:ml-1/24 border-b border-white">
-                            <h3 className="font-display text-2xl md:text-3xl">Test heading</h3>
-                            <time className="uppercase block mb-4 text-gray-400">18 September, 2021</time>
-                            <p className="mb-4">Lorem ipsum of some text that chills here.</p>
-                        </article>
-
+                        {announcementsArray.map((element, index) => {
+                            if (index % 2 === 0) {
+                                return (
+                                    <article className="lg:w-11/24 py-8 lg:mr-1/24 border-b border-white" key={element.id}>
+                                        <h3 className="font-display text-2xl md:text-3xl">{element.primary.announcement_title.text}</h3>
+                                        <time className="uppercase block mb-4 text-gray-400">{element.primary.date_of_announcement}</time>
+                                        <RichText htmlSerializer={HtmlSerializer} render={element.primary.announcement.raw} />
+                                    </article>
+                                )
+                            } else {
+                                return (
+                                    <article className="lg:w-11/24 py-8 lg:ml-1/24 border-b border-white" key={element.id}>
+                                        <h3 className="font-display text-2xl md:text-3xl">{element.primary.announcement_title.text}</h3>
+                                        <time className="uppercase block mb-4 text-gray-400">{element.primary.date_of_announcement}</time>
+                                        <RichText htmlSerializer={HtmlSerializer} render={element.primary.announcement.raw} />
+                                    </article>
+                                )
+                            }
+                        })}                        
                     </div>
                 </div>
             </div>
