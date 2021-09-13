@@ -14,27 +14,8 @@ function AboutPage({ data }) {
     <Layout title=" | About">
       <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
 
-        <Article heading={doc.page_title.raw[0].text} body={doc.page_introduction.raw} />
-        
-        <section className="mb-12">
-          <h3 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4 ml-1/24">Our doctors</h3>
-          <ul className="lg:flex lg:flex-wrap">
-            {doc.body.map((element, index) => {
-              return (
-                <Doctors
-                  key={element.id}
-                  image={element.primary.headshot.gatsbyImageData}
-                  alt={element.primary.headshot.alt}
-                  name={element.primary.doctor_s_name.text}
-                  position={element.primary.doctor_position.text}
-                  qualifications={element.primary.doctor_qualifications.text}
-                  about={element.primary.doctor_bio.raw}
-                />
-              )
-            })}
-          </ul>
-        </section>
-
+        <Article heading={doc.page_title.raw[0].text} body={doc.page_introduction.raw} />        
+        <Doctors />            
         <section className="border-l border-black px-1/24 py-8 mb-24">
           <h3 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4">Our nursing and support staff</h3>
           <div className="lg:flex lg:justify-end">
@@ -77,30 +58,7 @@ export const query = graphql`
           }
         page_introduction {
             raw
-        }
-        body {
-            ... on PrismicAboutDataBodyDoctorProfiles {
-              id
-              primary {
-                doctor_bio {
-                  raw
-                }
-                doctor_position {
-                  text
-                }
-                doctor_qualifications {
-                  text
-                }
-                doctor_s_name {
-                  text
-                }
-                headshot {
-                  alt
-                  gatsbyImageData
-                }
-              }
-            }
-          }
+        }        
         services_image {
             gatsbyImageData
           } 
