@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import PageTransition from "gatsby-plugin-page-transitions"
 import DesktopNavigation from "../components/DesktopNavigation"
 import MobileNavigation from "../components/MobileNavigation"
 
@@ -37,7 +38,9 @@ function Layout({ children, title }) {
                 </header>
             </div>
             <main>
-                {children}
+                <PageTransition>
+                    {children}
+                </PageTransition>
             </main>
             <footer>
                 <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8 lg:flex lg:justify-between border-t border-black">
