@@ -55,8 +55,9 @@ function Layout({ children, title }) {
                             Waitakere 0642</p>
                     </div>
                     <div className="lg:px-1/24">
-                        <p>Phone – <a href="tel:">(09) 817 8069</a></p>
-                        <p>Fax – <a href="tel:">(09) 817 8067</a></p>
+                        <p>Email – <a href="mailto:admin@titirangimc.co.nz">admin@titirangimc.co.nz</a></p>
+                        <p>Phone – <a href="tel:+64098178069">(09) 817 8069</a></p>
+                        <p>Fax – (09) 817 8067</p>
                     </div>
                 </div>
             </footer>

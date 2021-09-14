@@ -14,7 +14,7 @@ function BookingsPage() {
                     <div className="lg:w-1/2 lg:pl-1/24">
                         <div className="pb-8 border-b border-black">
                             <h3 className="uppercase leading-snug text-gray-500">Option 1</h3>
-                            <p className="font-display text-2xl md:text-3xl mb-4">Call <a href="tel:">0475 9837 8302</a></p>
+                            <p className="font-display text-2xl md:text-3xl mb-4">Call <a href="tel:tel:+64098178069">(09) 817 8069</a></p>
                             <p>The easiest way to make a booking is to call us to arrange a time</p>
                         </div>
                         <div className="pt-8">
