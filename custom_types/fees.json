@@ -1,5 +1,21 @@
 {
   "Main": {
+    "the_patient_fee_system": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "The patient fee system",
+        "placeholder": "The patient fee system in New Zealand"
+      }
+    },
+    "body1": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, hyperlink",
+        "label": "body",
+        "placeholder": "Explainer of the patient fee system"
+      }
+    },
     "body": {
       "type": "Slices",
       "fieldset": "Slice zone",
@@ -77,7 +93,7 @@
               "service": {
                 "type": "StructuredText",
                 "config": {
-                  "single": "paragraph, heading3",
+                  "single": "paragraph,heading3",
                   "label": "Service",
                   "placeholder": "Service"
                 }
@@ -85,7 +101,7 @@
               "fee": {
                 "type": "StructuredText",
                 "config": {
-                  "single": "paragraph, heading3",
+                  "single": "paragraph,heading3",
                   "label": "Fee",
                   "placeholder": "Fee"
                 }
