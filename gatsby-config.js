@@ -45,6 +45,7 @@ module.exports = {
           homepage: require("./custom_types/homepage.json"),
           about: require("./custom_types/about.json"),
           news_and_informations: require("./custom_types/news_and_informations.json"),
+          fees: require("./custom_types/fees.json"),
         },
       },
     },

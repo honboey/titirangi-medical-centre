@@ -1,0 +1,99 @@
+{
+  "Main": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "consultation_fees": {
+            "type": "Slice",
+            "fieldset": "Consultation fees",
+            "description": "Table of fees for consultations",
+            "icon": "attach_money",
+            "display": "list",
+            "non-repeat": {
+              "table_heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Table heading",
+                  "placeholder": "Consultation fees"
+                }
+              }
+            },
+            "repeat": {
+              "age": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,heading3",
+                  "label": "Age",
+                  "placeholder": "Age range e.g 13 – 64"
+                }
+              },
+              "enrolled": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,heading3",
+                  "label": "Enrolled",
+                  "placeholder": "Enrolled"
+                }
+              },
+              "casual": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,heading3",
+                  "label": "Casual",
+                  "placeholder": "casual"
+                }
+              },
+              "csc": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,heading3",
+                  "label": "CSC",
+                  "placeholder": "CSC"
+                }
+              }
+            }
+          },
+          "service_fees": {
+            "type": "Slice",
+            "fieldset": "Service fees",
+            "description": "Table of service fees",
+            "icon": "attach_money",
+            "display": "list",
+            "non-repeat": {
+              "service_fees": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Service Fees",
+                  "placeholder": "Service Fees"
+                }
+              }
+            },
+            "repeat": {
+              "service": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph, heading3",
+                  "label": "Service",
+                  "placeholder": "Service"
+                }
+              },
+              "fee": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph, heading3",
+                  "label": "Fee",
+                  "placeholder": "Fee"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
