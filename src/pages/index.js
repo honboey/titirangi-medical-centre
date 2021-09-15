@@ -59,6 +59,7 @@ function IndexPage({ data }) {
           </div>
         </section>
       </div>
+      
       <Announcements />
     </Layout>
   )
