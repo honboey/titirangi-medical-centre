@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
+import health365Form from "../forms/health365.pdf"
 
 function health365() {
   return (
@@ -15,9 +16,9 @@ function health365() {
 
             <p className="mb-4">Once enrolled in health365, you can access your records with a secure password. It provides 24 hour access, 7 days a week. This service is available for $10 a year.</p>
 
-            <p className="mb-4">If you are interested, please download <a href="">this form</a> and return to reception and they will go through the process of setting it up. You will need proof of identification and an email address to set it up. Once set up, you will receive a username and password via email.</p>
+            <p className="mb-4">If you are interested, please download <a href={health365Form}>this form</a> and return to reception and they will go through the process of setting it up. You will need proof of identification and an email address to set it up. Once set up, you will receive a username and password via email.</p>
 
-            <a href="/"><StaticImage src="../images/health365.jpg" alt="Thumbnail of Health365 enrolment form" className="float-left mr-8 w-1/3" /></a>
+            <a href="https://health365.co.nz/SGAccount/LogOn"><StaticImage src="../images/health365.jpg" alt="Thumbnail of Health365 enrolment form" className="float-left mr-8 w-1/3 sm:w-1/12 lg:w-1/3" /></a>
             <p className="mb-4">Please click <a href="https://health365.co.nz/SGAccount/LogOn">on the logo</a> to access the portal </p>
           </div>
         </section>

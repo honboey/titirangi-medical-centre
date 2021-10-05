@@ -30,6 +30,14 @@ module.exports = {
       __key: "images",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "forms",
+        path: "./src/forms/",
+      },
+      __key: "forms",
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "./src/images/favicon.png"
