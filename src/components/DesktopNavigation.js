@@ -9,6 +9,7 @@ function DesktopNavigation() {
             <li><Link to="/news" className="no-underline" activeStyle={{ textDecoration: "underline" }}>News & Information</Link></li>
             <li><Link to="/fees" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Fees</Link></li>
             <li><Link to="/contact" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Contact</Link></li>
+            <li><Link to="/health365" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Health365</Link></li>
         </ul>
     )
 }

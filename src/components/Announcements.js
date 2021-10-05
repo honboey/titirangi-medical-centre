@@ -37,7 +37,7 @@ function Announcements() {
             </div>
             <div className="bg-black text-white mb-8">
                 <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
-                    <div className="lg:flex lg:flex-wrap lg:justify-between lg:border-r lg:border-l lg:border-white px-1/24">
+                    <div className="lg:flex lg:flex-wrap lg:justify-between px-1/24">
                         {announcementsArray.map((element, index) => {
                             if (index % 2 === 0) {
                                 return (

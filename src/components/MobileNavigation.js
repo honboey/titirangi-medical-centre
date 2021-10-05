@@ -31,6 +31,7 @@ function MobileNavigation() {
                     <li><button onClick={toggleNav}><Link to="/news" className="no-underline" activeStyle={{ textDecoration: "underline" }}>News & Information</Link></button></li>
                     <li><button onClick={toggleNav}><Link to="/fees" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Fees</Link></button></li>
                     <li><button onClick={toggleNav}><Link to="/contact" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Contact</Link></button></li>
+                    <li><button onClick={toggleNav}><Link to="/health365" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Health365</Link></button></li>
                     <li><button onClick={toggleNav} className="border border-tcm-green mt-4 rounded-md px-2 py-1"><Link to="/bookings" className="no-underline" activeStyle={{ textDecoration: "underline" }}>Bookings & Enrolments</Link></button></li>
                 </ul>
             </nav>
