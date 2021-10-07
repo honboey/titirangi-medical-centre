@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { RichText } from "prismic-reactjs";
+import HtmlSerializerFaq from "../utilities/HtmlSerializerFaq";
 
 function Faq() {
   const [faqOpen, setFaqOpen] = useState({});
@@ -20,7 +22,7 @@ function Faq() {
                     slice_type
                     primary {
                       faq_answer {
-                        text
+                        raw
                       }
                       faq_question {
                         text
@@ -52,7 +54,9 @@ function Faq() {
                     <h3 className="font-display text-2xl md:text-3xl">{element.primary.faq_question.text}</h3>
                   </button>
                 </div>
-                <p className={faqOpen[index] ? "ml-1/12 lg:w-7/12" : "hidden"}>{element.primary.faq_answer.text}</p>
+                <div className={faqOpen[index] ? null : "hidden"}>
+                  <RichText htmlSerializer={HtmlSerializerFaq} render={element.primary.faq_answer.raw} />
+                </div>
               </li>
             )
           })
