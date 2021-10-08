@@ -25,6 +25,9 @@ function Doctors() {
                     doctor_s_name {
                       text
                     }
+                    preferred_pronouns {
+                      text
+                    }
                     headshot {
                       alt
                       gatsbyImageData
@@ -49,7 +52,9 @@ function Doctors() {
                                     className="mb-4 w-1/2 lg:w-full" 
                                     image={element.primary.headshot.gatsbyImageData} 
                                     alt={element.primary.headshot.alt} />
-                                <h4 className="font-display text-2xl md:text-3xl mb-4">{element.primary.doctor_s_name.text}</h4>
+                                <h4 className="font-display text-2xl md:text-3xl ">{element.primary.doctor_s_name.text}</h4>
+                                <p className="mb-4 text-gray-500">{element.primary.preferred_pronouns.text}</p>
+
                                 <p className="uppercase leading-snug text-gray-500 mb-4">
                                     {element.primary.doctor_position.text}<br />
                                     {element.primary.doctor_qualifications.text}</p>
