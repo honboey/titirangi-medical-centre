@@ -58,7 +58,7 @@
     "history": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, hyperlink, list-item",
+        "multi": "paragraph,hyperlink,list-item",
         "label": "history",
         "placeholder": "Our history"
       }
@@ -92,6 +92,14 @@
                 "config": {
                   "single": "heading4",
                   "label": "Doctor's name"
+                }
+              },
+              "preferred_pronouns": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading5",
+                  "label": "Preferred pronouns",
+                  "placeholder": "e.g He/him"
                 }
               },
               "doctor_position": {
