@@ -29,8 +29,7 @@ function IndexPage({ data }) {
           </figure>
           <div className="flex justify-end">
             <div className="w-8/12 lg:w-1/2 pl-1/24 lg:px-1/24 py-6 mb-8 border-l border-black">
-              <h3 className="font-display text-2xl md:text-3xl mb-4">Our Clinic</h3>
-              <p>Nestled within vibrant Titirangi, our clinic overlooks the beautiful Waitakere Ranges. Many of us are local and are part of the Titirangil community. Come visit us at <a href="https://goo.gl/maps/FWErtgeuLaofNBgs5">2 Newland Rd, Titirangi</a>.</p>
+              <RichText htmlSerializer={HtmlSerializer} render={doc.our_clinic.raw} />
             </div>
           </div>
         </section>
