@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import enrolmentForm from "../forms/enrolment.pdf"
+import enrolmentFormGuide from "../forms/enrolment-guide.pdf"
 
 function BookingsPage() {
     return (
@@ -16,12 +17,12 @@ function BookingsPage() {
                         <div className="pb-8 border-b border-black">
                             <h3 className="uppercase leading-snug text-gray-500">Option 1</h3>
                             <p className="font-display text-2xl md:text-3xl mb-4">Call <a href="tel:tel:+64098178069">(09) 817 8069</a></p>
-                            <p>The easiest way to make a booking is to call us to arrange a time</p>
+                            <p>Call us to book an appointment.</p>
                         </div>
                         <div className="pt-8">
-                            <h3 className="uppercase leading-snug text-gray-500">Option 2</h3>
-                            <p className="font-display text-2xl md:text-3xl mb-4"><a href="https://health365.co.nz/SGAccount/LogOn">Health365</a></p>
-                            <p>If you have an Helath365 account you can make an appointment through the Health365 portal.</p>
+                            <h3 className="uppercase leading-snug text-gray-300">Option 2</h3>
+                            <p className="font-display text-2xl md:text-3xl mb-4 text-gray-300">Health365</p>
+                            <p className="text-gray-400">Due to the current alert levels in Auckland and the need to triage appointments, we are unable to book appointments via Health365.</p>
                         </div>
                     </div>
                 </section>
@@ -33,7 +34,8 @@ function BookingsPage() {
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
                         <a href={enrolmentForm}><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" className="w-1/3 float-left mr-8"/></a>
                         <p className="mb-4">Our books are currently open and we are taking new enrolments.</p>
-                        <p>Please <a href={enrolmentForm}>download this form</a>. Once the form is completed, please email it to <a href="mailto:admin@titirangimc.co.nz">admin@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
+                        <p className="mb-4">Please <a href={enrolmentForm}>download this form</a>. Once the form is completed, please email it to <a href="mailto:admin@titirangimc.co.nz">admin@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
+                        <p className="mb-4">Please <a href={enrolmentFormGuide}>click here</a> to view the <i>Enrolment Form Guide for Paitents</i></p>
                     </div>
                 </section>                
             </div>

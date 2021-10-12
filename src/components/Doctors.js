@@ -54,7 +54,6 @@ function Doctors() {
                                     alt={element.primary.headshot.alt} />
                                 <h4 className="font-display text-2xl md:text-3xl ">{element.primary.doctor_s_name.text}</h4>
                                 <p className="mb-4 text-gray-500">{element.primary.preferred_pronouns.text}</p>
-
                                 <p className="uppercase leading-snug text-gray-500 mb-4">
                                     {element.primary.doctor_position.text}<br />
                                     {element.primary.doctor_qualifications.text}</p>

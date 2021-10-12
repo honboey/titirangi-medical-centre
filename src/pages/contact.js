@@ -30,7 +30,9 @@ function ContactPage() {
                             <p className="font-display text-2xl md:text-3xl mb-8">(09) 817 8069</p>
                         </a>
                         <h3 className="uppercase leading-snug text-gray-500">Fax</h3>
-                        <p className="font-display text-2xl md:text-3xl mb-8">(09) 817 8069</p>
+                        <p className="font-display text-2xl md:text-3xl mb-8">(09) 817 8067</p>
+                        <h3 className="uppercase leading-snug text-gray-500">Healthlink EDI</h3>
+                        <p className="font-display text-2xl md:text-3xl mb-8">titimedi</p>
                     </div>
                 </section>
 

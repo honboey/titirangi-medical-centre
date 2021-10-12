@@ -18,8 +18,7 @@ function health365() {
 
             <p className="mb-4">If you are interested, please download <a href={health365Form}>this form</a> and return to reception and they will go through the process of setting it up. You will need proof of identification and an email address to set it up. Once set up, you will receive a username and password via email.</p>
 
-            <a href="https://health365.co.nz/SGAccount/LogOn"><StaticImage src="../images/health365.jpg" alt="Thumbnail of Health365 enrolment form" className="float-left mr-8 w-1/3 sm:w-1/12 lg:w-1/3" /></a>
-            <p className="mb-4">Please click <a href="https://health365.co.nz/SGAccount/LogOn">on the logo</a> to access the portal </p>
+            <p>Currently we are unable to book appointments through Health365 due to the current alert levels - please call <a href="tel:tel:+64098178069">09 817 8069</a> to book your appointment</p>
           </div>
         </section>
       </div>
