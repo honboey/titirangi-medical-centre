@@ -5,15 +5,13 @@ import Article from "../components/Article"
 
 function FeesPage({ data }) {
     const doc = data.prismicFees.data
-    console.log(doc)
 
-    const consultationFees = data.prismicFees.data.body.filter(element =>
+    const consultationFees = doc.body.filter(element =>
         element.slice_type === "consultation_fees"
     )
-    const serviceFees = data.prismicFees.data.body.filter(element =>
+    const serviceFees = doc.body.filter(element =>
         element.slice_type === "service_fees"
     )
-
     return (
         <Layout title=" | Fees">
             <div className="wrapper max-w-screen-xl mx-auto p-4 lg:p-8">
@@ -22,6 +20,9 @@ function FeesPage({ data }) {
                     <table className="w-full">
                         <tbody>
                             {consultationFees[0].items.map((element, index) => {
+                                if (element.age.raw[0] === undefined) {
+                                  return
+                                } else 
                                 if (element.age.raw[0].type === "paragraph") {
                                     return (
                                         <tr key={index}>
@@ -51,6 +52,9 @@ function FeesPage({ data }) {
                     <table className="w-full">
                         <tbody>
                             {serviceFees[0].items.map((element, index) => {
+                                if (element.fee.raw[0] === undefined) {
+                                  return
+                                } else 
                                 if (element.fee.raw[0].type === "paragraph") {
                                     return (
                                         <tr key={index}>
