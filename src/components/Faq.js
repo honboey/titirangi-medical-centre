@@ -42,23 +42,27 @@ function Faq() {
       <ul >
         {
           faqArray.map((element, index) => {
-            return (
-              <li className="mb-8" key={element.id}>
-                <div className="flex items-start mb-2">
-                  <button className="w-1/12 pr-2 pt-2" onClick={toggleFaq(index)} aria-label="Reveal answer">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
-                    </svg>
-                  </button>
-                  <button className="text-left w-23/24" onClick={toggleFaq(index)}>
-                    <h3 className="font-display text-2xl md:text-3xl">{element.primary.faq_question.text}</h3>
-                  </button>
-                </div>
-                <div className={faqOpen[index] ? null : "hidden"}>
-                  <RichText htmlSerializer={HtmlSerializerFaq} render={element.primary.faq_answer.raw} />
-                </div>
-              </li>
-            )
+            if (element === undefined) {
+              return
+            } else {
+                return (
+                  <li className="mb-8" key={element.id}>
+                    <div className="flex items-start mb-2">
+                      <button className="w-1/12 pr-2 pt-2" onClick={toggleFaq(index)} aria-label="Reveal answer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                      </button>
+                      <button className="text-left w-23/24" onClick={toggleFaq(index)}>
+                        <h3 className="font-display text-2xl md:text-3xl">{element.primary.faq_question.text}</h3>
+                      </button>
+                    </div>
+                    <div className={faqOpen[index] ? null : "hidden"}>
+                      <RichText htmlSerializer={HtmlSerializerFaq} render={element.primary.faq_answer.raw} />
+                    </div>
+                  </li>
+                )
+              }
           })
         }
       </ul>

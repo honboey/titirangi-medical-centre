@@ -5,7 +5,7 @@ import { RichText } from 'prismic-reactjs'
 import HtmlSerializer from "../utilities/HtmlSerializer"
 
 function Doctors() {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query DoctorsQuery {
         prismicAbout {
           data {                        
@@ -40,31 +40,35 @@ function Doctors() {
       }
     `)
 
-    return (
-        <section className="mb-12">
-            <h3 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4 ml-1/24">Our doctors</h3>
-            <ul className="lg:flex lg:flex-wrap">
-                {data.prismicAbout.data.body.map((element) => {
-                    return (
-                        <>
-                            <li className="mb-12 lg:w-4/12 px-1/24">
-                                <GatsbyImage 
-                                    className="mb-4 w-1/2 lg:w-full" 
-                                    image={element.primary.headshot.gatsbyImageData} 
-                                    alt={element.primary.headshot.alt} />
-                                <h4 className="font-display text-2xl md:text-3xl ">{element.primary.doctor_s_name.text}</h4>
-                                <p className="mb-4 text-gray-500">{element.primary.preferred_pronouns.text}</p>
-                                <p className="uppercase leading-snug text-gray-500 mb-4">
-                                    {element.primary.doctor_position.text}<br />
-                                    {element.primary.doctor_qualifications.text}</p>
-                                <RichText htmlSerializer={HtmlSerializer} render={element.primary.doctor_bio.raw} />
-                            </li>
-                        </>
-                    )
-                })}
-            </ul>
-        </section>
-    )
+  return (
+    <section className="mb-12">
+      <h3 className="font-display text-4xl md:text-6xl leading-snug md:leading-normal mb-4 ml-1/24">Our doctors</h3>
+      <ul className="lg:flex lg:flex-wrap">
+        {data.prismicAbout.data.body.map((element) => {
+          if (element === undefined) {
+            return
+          } else {
+            return (
+              <>
+                <li className="mb-12 lg:w-4/12 px-1/24">
+                  <GatsbyImage
+                    className="mb-4 w-1/2 lg:w-full"
+                    image={element.primary.headshot.gatsbyImageData}
+                    alt={element.primary.headshot.alt} />
+                  <h4 className="font-display text-2xl md:text-3xl ">{element.primary.doctor_s_name.text}</h4>
+                  <p className="mb-4 text-gray-500">{element.primary.preferred_pronouns.text}</p>
+                  <p className="uppercase leading-snug text-gray-500 mb-4">
+                    {element.primary.doctor_position.text}<br />
+                    {element.primary.doctor_qualifications.text}</p>
+                  <RichText htmlSerializer={HtmlSerializer} render={element.primary.doctor_bio.raw} />
+                </li>
+              </>
+            )
+          }
+        })}
+      </ul>
+    </section>
+  )
 }
 
 export default Doctors
