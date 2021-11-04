@@ -25,7 +25,7 @@ function IndexPage({ data }) {
         <section className="mb-8">
           <figure className="mb-4 w-full lg:w-21/24">
             <GatsbyImage image={doc.clinic_image.gatsbyImageData} alt={doc.clinic_image.alt} />
-            <figcaption className="text-xs">Photo by Phil Botha</figcaption>
+            <figcaption className="text-xs">Photo by Google Street View</figcaption>
           </figure>
           <div className="flex justify-end">
             <div className="w-8/12 lg:w-1/2 pl-1/24 lg:px-1/24 py-6 mb-8 border-l border-black">
@@ -37,7 +37,7 @@ function IndexPage({ data }) {
         <section className="lg:w-11/12 lg:mx-auto lg:flex lg:items-center mb-8">
           <figure className="mb-4 w-full lg:w-14/22 lg:order-2 lg:border-l lg:border-black lg:pl-1/22 lg:pt-4">
             <GatsbyImage image={doc.new_patients_image.gatsbyImageData} alt={doc.new_patients_image.alt} />
-            <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@picsbyjameslee">James Lee</a></figcaption>
+            <figcaption className="text-xs">Photo by <a href="https://unsplash.com/@philbotha">Phil Botha</a></figcaption>
           </figure>
           <div className="flex justify-end lg:w-8/22 lg:pr-1/22 lg:order-1">
             <div className="w-8/12 lg:w-full pl-1/24 lg:pl-0 py-6 mb-8 border-l border-black lg:border-0">

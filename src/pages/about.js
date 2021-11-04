@@ -21,7 +21,7 @@ function AboutPage({ data }) {
           <div className="lg:flex lg:justify-end">
             <figure className="lg:w-3/4 mb-8">
               <GatsbyImage image={doc.staff_image.gatsbyImageData} alt={doc.staff_image.alt} />
-              <figcaption className="text-xs">Photo by James Green</figcaption>
+              <figcaption className="text-xs">Photo by Jacqueline MacGregor</figcaption>
             </figure>
           </div>
           <div className="lg:w-1/2">
