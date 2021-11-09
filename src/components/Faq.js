@@ -43,7 +43,7 @@ function Faq() {
         {
           faqArray.map((element, index) => {
             if (element === undefined) {
-              return
+              return null
             } else {
                 return (
                   <li className="mb-8" key={element.id}>

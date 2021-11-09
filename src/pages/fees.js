@@ -25,7 +25,7 @@ function FeesPage({ data }) {
             <tbody>
               {consultationFees[0].items.map((element, index) => {
                 if (element.age.raw[0] === undefined) {
-                  return
+                  return null
                 } else
                   if (element.age.raw[0].type === "paragraph") {
                     return (
@@ -57,7 +57,7 @@ function FeesPage({ data }) {
             <tbody>
               {accFees[0].items.map((element, index) => {
                 if (element.age.raw[0] === undefined) {
-                  return
+                  return null
                 } else
                   if (element.age.raw[0].type === "paragraph") {
                     return (
@@ -89,7 +89,7 @@ function FeesPage({ data }) {
             <tbody>
               {serviceFees[0].items.map((element, index) => {
                 if (element.fee.raw[0] === undefined) {
-                  return
+                  return null
                 } else
                   if (element.fee.raw[0].type === "paragraph") {
                     return (

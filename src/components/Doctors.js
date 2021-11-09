@@ -46,7 +46,7 @@ function Doctors() {
       <ul className="lg:flex lg:flex-wrap">
         {data.prismicAbout.data.body.map((element) => {
           if (element === undefined) {
-            return
+            return null
           } else {
             return (
               <>
