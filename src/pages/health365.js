@@ -20,7 +20,7 @@ function health365() {
             <p className="mb-4">If you are interested, please download <a href={health365Form}>this form</a> and return to reception and they will go through the process of setting it up. You will need proof of identification and an email address to set it up. Once set up, you will receive a username and password via email.</p>
             <p className="mb-4">Currently we are unable to book appointments through Health365 due to the current alert levels - please call <a href="tel:tel:+64098178069">09 817 8069</a> to book your appointment</p>
             <p className="mb-4">Our books are currently open and we are taking new enrolments.</p>
-            <p className="mb-4">Please <a href={enrolmentForm}>download this form</a>.Once the form is completed, please email it to <a href="mailto:admin@titirangimc.co.nz">admin@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
+            <p className="mb-4">Please <a href={enrolmentForm}>download this form</a>.Once the form is completed, please email it to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
             <p className="mb-4">Please <a href={enrolmentFormGuide}>click here</a> to view the <i>Enrolment Form Guide for Paitents</i></p>
           </div>
         </section>
