@@ -114,6 +114,53 @@
                 }
               }
             }
+          },
+          "acc_fees": {
+            "type": "Slice",
+            "fieldset": "ACC Fees",
+            "description": "ACC Fees",
+            "icon": "attach_money",
+            "display": "list",
+            "non-repeat": {
+              "acc_fees": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "ACC Fees",
+                  "placeholder": "ACC Fees"
+                }
+              }
+            },
+            "repeat": {
+              "age": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading3",
+                  "label": "Age"
+                }
+              },
+              "enrolled": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading3",
+                  "label": "Enrolled"
+                }
+              },
+              "casual": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading3",
+                  "label": "Casual"
+                }
+              },
+              "csc": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading3",
+                  "label": "CSC"
+                }
+              }
+            }
           }
         }
       }
