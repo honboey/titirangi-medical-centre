@@ -1,11 +1,10 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+
+# Titirangi Medical Centre
+Website for the Titirangi Medical Centre. The site can be found at [titirangimc.co.nz](http://www.titirangimc.co.nz/).
+
+Titirangi Medical Centre is a family friendly medical centre consisting of 5 fully trained GPs, nursing and admin staff. It is located in Auckland, New Zealand. 
+
+This project uses [TailwindCSS](https://tailwindcss.com/) and React bootstrapped to [Gatsby](https://www.gatsbyjs.com/) with [Prismic](https://prismic.io/) as its CMS.
 
 ## 🚀 Quick start
 
