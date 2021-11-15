@@ -15,7 +15,7 @@ function health365() {
           </div>
           <div className="lg:w-1/2 lg:pl-1/24">
             <a href="https://health365.co.nz/SGAccount/LogOn"><StaticImage src="../images/health365.jpg" alt="Health365 logo" className="w-1/3 float-left mr-8" /></a>
-            <p className="mb-4">Health365 is a secure online system allowing patients to book doctor appointments, access your own lab results, immunisation records or order repeat prescriptions online.</p>
+            <p className="mb-4"><a href="https://health365.co.nz/SGAccount/LogOn">Health365</a> is a secure online system allowing patients to book doctor appointments, access your own lab results, immunisation records or order repeat prescriptions online.</p>
             <p className="mb-4">Once enrolled in health365, you can access your records with a secure password.It provides 24 hour access, 7 days a week. This service is available for $10 a year.</p>
             <p className="mb-4">If you are interested, please download <a href={health365Form}>this form</a> and return to reception and they will go through the process of setting it up. You will need proof of identification and an email address to set it up. Once set up, you will receive a username and password via email.</p>
             <p className="mb-4">Currently we are unable to book appointments through Health365 due to the current alert levels – please call <a href="tel:tel:+64098178069">09 817 8069</a> to book your appointment</p>

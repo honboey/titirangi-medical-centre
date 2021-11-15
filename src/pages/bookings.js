@@ -40,7 +40,6 @@ function BookingsPage() {
                     </div>
                 </section>                
             </div>
-
         </Layout>
     )
 }
