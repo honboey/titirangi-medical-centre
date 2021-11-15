@@ -20,8 +20,8 @@ function BookingsPage() {
                             <p>Call us to book an appointment.</p>
                         </div>
                         <div className="pt-8">
-                            <h3 className="uppercase leading-snug text-gray-300">Option 2</h3>
-                            <p className="font-display text-2xl md:text-3xl mb-4 text-gray-300">Health365</p>
+                            <h3 className="uppercase leading-snug text-gray-400">Option 2</h3>
+                            <p className="font-display text-2xl md:text-3xl mb-4 text-gray-400">Health365</p>
                             <p className="text-gray-400">Due to the current alert levels in Auckland and the need to triage appointments, we are unable to book appointments via Health365.</p>
                         </div>
                     </div>
