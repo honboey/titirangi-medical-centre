@@ -34,8 +34,9 @@ function BookingsPage() {
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
                         <a href={enrolmentForm}><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" className="w-1/3 float-left mr-8"/></a>
                         <p className="mb-4">Our books are currently open and we are taking new enrolments.</p>
-                        <p className="mb-4">Please <a href={enrolmentForm}>download this form</a>. Once the form is completed, please email it to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a> or bring it to the clinic in person. If you have any problems filling this form in – please come in and our friendly reception staff can help you. Please bring your birth certificate or proof of residency to your first appointment to complete registration.</p>
+                        <p className="mb-4">Please <a href={enrolmentForm}>download this form</a>. Once the form is completed, please email it to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a> or bring it to the clinic in person. If you have any problems filling this form in please come in and our friendly reception staff can help you. Bring your birth certificate or proof of residency to your first appointment to complete registration.</p>
                         <p className="mb-4">Please <a href={enrolmentFormGuide}>click here</a> to view the <i>Enrolment Form Guide for Paitents</i></p>
+                        <p className="mb-4">Your first appointment with the doctor will need to be a double appointment for the doctor to go through all your medical history. For your initial appointment, we expect pre-payment before you see the doctor.</p>
                     </div>
                 </section>                
             </div>
