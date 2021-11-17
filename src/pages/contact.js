@@ -14,13 +14,13 @@ function ContactPage() {
                         <h3 className="uppercase leading-snug text-gray-500">Street Address</h3>
                         <a href="https://goo.gl/maps/FWErtgeuLaofNBgs5">
                             <p className="font-display text-2xl md:text-3xl mb-4">2 Rangiwai Rd<br />
-                                Titrangi<br />
+                                Titirangi<br />
                                 Waitakere 0604</p>
                             <StaticImage src="../images/map.png" alt="Google map" className="mb-8" /></a>
                         <h3 className="uppercase leading-snug text-gray-500">Postal Address</h3>
                         <p className="font-display text-2xl md:text-3xl mb-8">PO Box 60107<br />
-                            Titrangi<br />
-                            Waitakere 0604</p>
+                            Titirangi<br />
+                            Waitakere 0642</p>
                         <h3 className="uppercase leading-snug text-gray-500">Email</h3>
                         <a href="mailto:office@titirangimc.co.nz">
                             <p className="font-display text-2xl md:text-3xl mb-8">office@titirangimc.co.nz</p>
