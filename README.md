@@ -1,6 +1,6 @@
 
 # Titirangi Medical Centre
-Website for the Titirangi Medical Centre. The site can be found at [titirangimedicalcentremain.gatsbyjs.io/](https://titirangimedicalcentremain.gatsbyjs.io/).
+Website for the Titirangi Medical Centre. The site can be found at [titirangimc.co.nz/](https://www.titirangimc.co.nz/).
 
 Titirangi Medical Centre is a family friendly medical centre consisting of 5 fully trained GPs, nursing and admin staff. It is located in Auckland, New Zealand. 
 
