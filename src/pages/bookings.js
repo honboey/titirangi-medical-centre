@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import enrolmentForm from "../forms/enrolment.pdf"
 import enrolmentFormGuide from "../forms/enrolment-guide.pdf"
+import health365Form from "../forms/health365.pdf"
 
 function BookingsPage() {
     return (
@@ -32,13 +33,21 @@ function BookingsPage() {
                     </div>
                     <div className="lg:w-1/2 lg:pl-1/24">
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
-                        <a href={enrolmentForm}><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" className="w-1/3 float-left mr-8"/></a>
+                        <a href={enrolmentForm}><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" className="w-1/3 float-left mr-8" /></a>
                         <p className="mb-4">Our books are currently open and we are taking new enrolments.</p>
-                        <p className="mb-4">Please <a href={enrolmentForm}>download this form</a>. Once the form is completed, please email it to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a> or bring it to the clinic in person. If you have any problems filling this form in please come in and our friendly reception staff can help you. Bring your birth certificate or proof of residency to your first appointment to complete registration.</p>
+                        <p className="mb-4">Please <a href={enrolmentForm}>download this enrolment package</a> and complete the forms in it. Once the forms are completed, please email it to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
+                        <p className="mb-4">Bring your birth certificate or proof of residency to your first appointment to complete registration.</p>
+                        <h4 className="uppercase">Enrolment checklist</h4>
+                        <p className="">Please bring the following to your first appointment:</p>
+                        <ul className="mb-4">
+                            <li>&#9745; Completed <a href={enrolmentForm}>enrolment package</a> (ProCare enrolment, Registration checklist, Consent to transfer of notes, Privavy declaration)</li>
+                            <li>&#9745; Passport / birth certificate / proof of residency</li>
+                            <li>&#9745; <a href={health365Form}>Health365 enrolment form</a> (optional)</li>
+                        </ul>
                         <p className="mb-4">Please <a href={enrolmentFormGuide}>click here</a> to view the <i>Enrolment Form Guide for Paitents</i></p>
                         <p className="mb-4">Your first appointment with the doctor will need to be a double appointment for the doctor to go through all your medical history. For your initial appointment, we expect pre-payment before you see the doctor.</p>
                     </div>
-                </section>                
+                </section>
             </div>
         </Layout>
     )
