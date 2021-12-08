@@ -40,9 +40,8 @@ function BookingsPage() {
                         <h4 className="uppercase">Enrolment checklist</h4>
                         <p className="">Please bring the following to your first appointment:</p>
                         <ul className="mb-4">
-                            <li>&#9745; Completed <a href={enrolmentForm}>enrolment package</a> (ProCare enrolment, Registration checklist, Consent to transfer of notes, Privavy declaration)</li>
+                            <li>&#9745; Completed <a href={enrolmentForm}>enrolment package</a> (ProCare enrolment, Registration checklist, Consent form for request of notes, Health365 enrolment (optional), Privacy declaration)</li>
                             <li>&#9745; Passport / birth certificate / proof of residency</li>
-                            <li>&#9745; <a href={health365Form}>Health365 enrolment form</a> (optional)</li>
                         </ul>
                         <p className="mb-4">Please <a href={enrolmentFormGuide}>click here</a> to view the <i>Enrolment Form Guide for Paitents</i></p>
                         <p className="mb-4">Your first appointment with the doctor will need to be a double appointment for the doctor to go through all your medical history. For your initial appointment, we expect pre-payment before you see the doctor.</p>
