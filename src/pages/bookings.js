@@ -34,7 +34,7 @@ function BookingsPage() {
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
                         <a href={enrolmentForm}><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" className="w-1/3 float-left mr-8" /></a>
                         <p className="mb-4">Our books are currently open and we are taking new enrolments.</p>
-                        <p className="mb-4">Please download this enrolment package.  Complete these forms and together with a copy of either your birth certificate/passport or proof of residency (work or resident visa) - email to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a>. Alternatively, you can bring these forms along with your birth certificate/passport or proof of residency to the clinic in person.</p>
+                        <p className="mb-4">Please <a href={enrolmentForm}>download this enrolment package</a>. Complete these forms and together with a copy of either your birth certificate/passport or proof of residency (work or resident visa) - email to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a>. Alternatively, you can bring these forms along with your birth certificate/passport or proof of residency to the clinic in person.</p>
                         <p className="mb-4">This enrolment process needs to be completed at least 1 week prior to your first appointment.</p>
                         <p className="mb-4">
                             <h4 className="uppercase">Enrolment checklist</h4>
