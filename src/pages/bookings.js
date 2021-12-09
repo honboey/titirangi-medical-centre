@@ -34,24 +34,26 @@ function BookingsPage() {
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
                         <a href={enrolmentForm}><StaticImage src="../images/form.jpg" alt="Thumbnail of enrolment form" className="w-1/3 float-left mr-8" /></a>
                         <p className="mb-4">Our books are currently open and we are taking new enrolments.</p>
-                        <p className="mb-4">Please <a href={enrolmentForm}>download this enrolment package</a> and complete the forms in it. Once the forms are completed, please email it to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a> or bring it to the clinic in person.</p>
-                        <p className="mb-4">Bring your birth certificate or proof of residency to your first appointment to complete registration.</p>
-                        <h4 className="uppercase">Enrolment checklist</h4>
-                        <p className="">Please bring the following to your first appointment:</p>
-                        <ul className="mb-4">
-                            <li>&#9745; Completed <a href={enrolmentForm}>enrolment package</a>
-                                <ul className="list-inside list-disc pl-5">
-                                    <li>ProCare enrolment</li>
-                                    <li>Registration checklist</li>
-                                    <li>Consent form for request of notes</li>
-                                    <li>Health365 enrolment (optional)</li>
-                                    <li>Privacy declaration</li>
-                                </ul>
-                            </li>
-                            <li>&#9745; Passport / birth certificate / proof of residency</li>
-                        </ul>
-                        <p className="mb-4">Please <a href={enrolmentFormGuide}>click here</a> to view the <i>Enrolment Form Guide for Paitents</i></p>
-                        <p className="mb-4">Your first appointment with the doctor will need to be a double appointment for the doctor to go through all your medical history. For your initial appointment, we expect pre-payment before you see the doctor.</p>
+                        <p className="mb-4">Please download this enrolment package.  Complete these forms and together with a copy of either your birth certificate/passport or proof of residency (work or resident visa) - email to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a>. Alternatively, you can bring these forms along with your birth certificate/passport or proof of residency to the clinic in person.</p>
+                        <p className="mb-4">This enrolment process needs to be completed at least 1 week prior to your first appointment.</p>
+                        <p className="mb-4">
+                            <h4 className="uppercase">Enrolment checklist</h4>
+                            Please make sure you have completed and signed:
+                            <ul>
+                                <li>&#9745; Completed <a href={enrolmentForm}>enrolment package</a>
+                                    <ul className="list-inside list-disc pl-5">
+                                        <li>ProCare enrolment</li>
+                                        <li>Registration checklist</li>
+                                        <li>Consent form for request of notes</li>
+                                        <li>Health365 enrolment (optional)</li>
+                                        <li>Privacy declaration (optional)</li>
+                                    </ul>
+                                </li>
+                                <li>&#9745; Copy of Passport / birth certificate / proof of residency (or bring in person to clinic before first appointment)</li>
+                            </ul>
+                        </p>
+                        <p className="mb-4">Please <a href={enrolmentFormGuide}>click here to view the Enrolment Form Guide for Patients</a></p>
+                        <p>Your first appointment with the doctor will need to be a double appointment for the doctor to go through all your medical history. For your initial appointment, we require pre-payment before you see the doctor.</p>
                     </div>
                 </section>
             </div>
