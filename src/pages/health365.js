@@ -2,8 +2,6 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import health365Form from "../forms/health365.pdf"
-import enrolmentFormGuide from "../forms/enrolment-guide.pdf"
-import enrolmentForm from "../forms/enrolment.pdf"
 
 function health365() {
   return (
