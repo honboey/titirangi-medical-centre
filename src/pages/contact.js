@@ -22,10 +22,10 @@ function ContactPage() {
                             Titirangi<br />
                             Waitakere 0642</p>
                         <h3 className="uppercase leading-snug text-gray-500">Email (admin)</h3>
-                        <p><a  className="font-display text-2xl md:text-3xl mb-8" href="mailto:office@titirangimc.co.nz">
+                        <p className="font-display text-2xl md:text-3xl mb-8"><a href="mailto:office@titirangimc.co.nz">
                             office@titirangimc.co.nz</a></p>
                         <h3 className="uppercase leading-snug text-gray-500">Email (nurse)</h3>
-                        <p><a  className="font-display text-2xl md:text-3xl mb-8" href="mailto:nurse@titirangimc.co.nz">
+                        <p className="font-display text-2xl md:text-3xl mb-8" ><a href="mailto:nurse@titirangimc.co.nz">
                             nurse@titirangimc.co.nz</a></p>
                         <h3 className="uppercase leading-snug text-gray-500">Phone</h3>
                         <a href="tel:+64098178069">
