@@ -1,163 +1,210 @@
 {
-  "Main": {
-    "uid": {
-      "type": "UID",
-      "config": {
-        "label": "slug",
-        "placeholder": "fees"
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "slug",
+        "placeholder" : "fees"
       }
     },
-    "the_patient_fee_system": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading2",
-        "label": "The patient fee system",
-        "placeholder": "The patient fee system in New Zealand"
+    "the_patient_fee_system" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "The patient fee system",
+        "placeholder" : "The patient fee system in New Zealand"
       }
     },
-    "body1": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph,hyperlink",
-        "label": "body",
-        "placeholder": "Explainer of the patient fee system"
+    "body1" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,hyperlink",
+        "label" : "body",
+        "placeholder" : "Explainer of the patient fee system"
       }
     },
-    "body": {
-      "type": "Slices",
-      "fieldset": "Slice zone",
-      "config": {
-        "labels": null,
-        "choices": {
-          "consultation_fees": {
-            "type": "Slice",
-            "fieldset": "Consultation fees",
-            "description": "Table of fees for consultations",
-            "icon": "attach_money",
-            "display": "list",
-            "non-repeat": {
-              "table_heading": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading2",
-                  "label": "Table heading",
-                  "placeholder": "Consultation fees"
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "consultation_fees" : {
+            "type" : "Slice",
+            "fieldset" : "Consultation fees",
+            "description" : "Table of fees for consultations",
+            "icon" : "attach_money",
+            "display" : "list",
+            "non-repeat" : {
+              "table_heading" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2",
+                  "label" : "Table heading",
+                  "placeholder" : "Consultation fees"
                 }
               }
             },
-            "repeat": {
-              "age": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "paragraph,heading3",
-                  "label": "Age",
-                  "placeholder": "Age range e.g 13 – 64"
+            "repeat" : {
+              "age" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "Age",
+                  "placeholder" : "Age range e.g 13 – 64"
                 }
               },
-              "enrolled": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "paragraph,heading3",
-                  "label": "Enrolled",
-                  "placeholder": "Enrolled"
+              "enrolled" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "Enrolled",
+                  "placeholder" : "Enrolled"
                 }
               },
-              "casual": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "paragraph,heading3",
-                  "label": "Casual",
-                  "placeholder": "casual"
+              "casual" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "Casual",
+                  "placeholder" : "casual"
                 }
               },
-              "csc": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "paragraph,heading3",
-                  "label": "CSC",
-                  "placeholder": "CSC"
+              "csc" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "CSC",
+                  "placeholder" : "CSC"
                 }
               }
             }
           },
-          "service_fees": {
-            "type": "Slice",
-            "fieldset": "Service fees",
-            "description": "Table of service fees",
-            "icon": "attach_money",
-            "display": "list",
-            "non-repeat": {
-              "service_fees": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading2",
-                  "label": "Service Fees",
-                  "placeholder": "Service Fees"
+          "service_fees" : {
+            "type" : "Slice",
+            "fieldset" : "Service fees",
+            "description" : "Table of service fees",
+            "icon" : "attach_money",
+            "display" : "list",
+            "non-repeat" : {
+              "service_fees" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2",
+                  "label" : "Service Fees",
+                  "placeholder" : "Service Fees"
                 }
               }
             },
-            "repeat": {
-              "service": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "paragraph,heading3",
-                  "label": "Service",
-                  "placeholder": "Service"
+            "repeat" : {
+              "service" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "Service",
+                  "placeholder" : "Service"
                 }
               },
-              "fee": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "paragraph,heading3",
-                  "label": "Fee",
-                  "placeholder": "Fee"
+              "fee" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "Fee",
+                  "placeholder" : "Fee"
                 }
               }
             }
           },
-          "acc_fees": {
-            "type": "Slice",
-            "fieldset": "ACC Fees",
-            "description": "ACC Fees",
-            "icon": "attach_money",
-            "display": "list",
-            "non-repeat": {
-              "acc_fees": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading2",
-                  "label": "ACC Fees",
-                  "placeholder": "ACC Fees"
+          "acc_fees" : {
+            "type" : "Slice",
+            "fieldset" : "ACC Fees",
+            "description" : "ACC Fees",
+            "icon" : "attach_money",
+            "display" : "list",
+            "non-repeat" : {
+              "acc_fees" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2",
+                  "label" : "ACC Fees",
+                  "placeholder" : "ACC Fees"
                 }
               }
             },
-            "repeat": {
-              "age": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, heading3",
-                  "label": "Age"
+            "repeat" : {
+              "age" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading3",
+                  "label" : "Age"
                 }
               },
-              "enrolled": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, heading3",
-                  "label": "Enrolled"
+              "enrolled" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading3",
+                  "label" : "Enrolled"
                 }
               },
-              "casual": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, heading3",
-                  "label": "Casual"
+              "casual" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading3",
+                  "label" : "Casual"
                 }
               },
-              "csc": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, heading3",
-                  "label": "CSC"
+              "csc" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading3",
+                  "label" : "CSC"
+                }
+              }
+            }
+          },
+          "nurse_prescriber_fees" : {
+            "type" : "Slice",
+            "fieldset" : "Nurse Prescriber Fees",
+            "description" : "Table of nurse prescriber fees",
+            "icon" : "attach_money",
+            "display" : "list",
+            "non-repeat" : {
+              "nurse_prescriber_fees" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2",
+                  "label" : "Nurse Prescriber Fees",
+                  "placeholder" : "Nurse Prescriber Fees"
+                }
+              }
+            },
+            "repeat" : {
+              "age" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "Age"
+                }
+              },
+              "enrolled" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading3",
+                  "label" : "Enrolled"
+                }
+              },
+              "casual" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "Casual"
+                }
+              },
+              "csc" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,heading3",
+                  "label" : "CSC"
                 }
               }
             }
