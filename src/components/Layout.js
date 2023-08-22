@@ -60,7 +60,6 @@ function Layout({ children, title }) {
                     <div className="lg:px-1/24">
                         <p>Email – <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a></p>
                         <p>Phone – <a href="tel:+64098178069">(09) 817 8069</a></p>
-                        <p>Fax – (09) 817 8067</p>
                         <p className="mb-4">Healthlink EDI – titimedi</p>
                         <p className="text-xs">Website designed and built by <a href="https://dialogicstudios.com.au/">Dialogic Studios</a></p>
                     </div>
