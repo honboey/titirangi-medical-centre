@@ -33,7 +33,7 @@ function BookingsPage() {
                     <div className="lg:w-1/2 lg:pl-1/24">
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
                         <p className="mb-4">Unfortunately our books are currently closed and we aren't taking any new patients at this time.</p>
-                        /*
+                        {/*
                         <p className="mb-4">We will be opening our books in January 2023.</p>
                         <p className="mb-4">Please download this <a href={ enrolmentForm }>enrolment package (PDF)</a>.  Complete these forms and together with a copy of either your birth certificate/passport or proof of residency (work or resident visa) – email to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a>. Alternatively, you can bring these forms along with your birth certificate/passport or proof of residency to the clinic in person.</p>
                         <p class="mb-4">This enrolment process needs to be completed at least 1 week prior to your first appointment.</p>
@@ -50,7 +50,7 @@ function BookingsPage() {
                         </ul>
                         <p class="mb-4">Please click here to view the <a href={ enrolmentFormGuide }>Enrolment Form Guide for Patients (PDF)</a></p>
                         <p class="mb-4">Your first appointment with the doctor will need to be a double appointment for the doctor to go through all your medical history. For your initial appointment, we require pre-payment before you see the doctor.</p>
-                        */
+                        */}
                     </div>
                 </section>
             </div>
