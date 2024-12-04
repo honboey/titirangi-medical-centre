@@ -6,6 +6,19 @@ Titirangi Medical Centre is a family friendly medical centre consisting of 5 ful
 
 This project uses [TailwindCSS](https://tailwindcss.com/) and React bootstrapped to [Gatsby](https://www.gatsbyjs.com/) with [Prismic](https://prismic.io/) as its CMS.
 
+## Running the project
+Install the right version of node - `16.16.0`
+`nvm install 16.16.0`
+
+Use that version
+`nvm use`
+
+Install dependencies
+`npm install`
+
+Run dev
+`npm run develop`
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
