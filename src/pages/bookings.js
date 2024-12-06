@@ -37,8 +37,8 @@ function BookingsPage() {
                         {/* <p className="mb-4">We will be opening our books in January 2023.</p> */}
                         <p className="mb-4">We have two different enrolment forms:
                             <ul className="ml-4 my-4 list-disc">
-                                <li>enrolment package for <a href={enrolmentFormOver16}>paitents 16 years and older</a></li>
-                                <li>enrolment package for <a href={enrolmentFormUnder16}>paitents 15 years and under</a></li>
+                                <li>enrolment package for <a href={enrolmentFormOver16}>patients 16 years and older</a></li>
+                                <li>enrolment package for <a href={enrolmentFormUnder16}>patients 15 years and under</a></li>
                             </ul>Complete these forms and together with a copy of either your birth certificate/passport or proof of residency (work or resident visa) – email to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a>. Alternatively, you can bring these forms along with your birth certificate/passport or proof of residency to the clinic in person.</p>
                         <p class="mb-4">This enrolment process needs to be completed at least 1 week prior to your first appointment.</p>
                         <h3 class="font-bold mb-4">Enrolment checklist</h3>
