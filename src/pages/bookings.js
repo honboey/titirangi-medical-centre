@@ -1,7 +1,8 @@
 import * as React from "react"
 // import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
-import enrolmentForm from "../forms/enrolment.pdf"
+import enrolmentFormOver16 from "../forms/enrolment-16-plus.pdf"
+import enrolmentFormUnder16 from "../forms/enrolment-16-under.pdf"
 import enrolmentFormGuide from "../forms/enrolment-guide.pdf"
 
 function BookingsPage() {
@@ -32,15 +33,18 @@ function BookingsPage() {
                     </div>
                     <div className="lg:w-1/2 lg:pl-1/24">
                         <h3 className="font-display text-2xl md:text-3xl mb-4">New Patients</h3>
-                        <p className="mb-4">Unfortunately our books are currently closed and we aren't taking any new patients at this time.</p>
-                        {/*
-                        <p className="mb-4">We will be opening our books in January 2023.</p>
-                        <p className="mb-4">Please download this <a href={ enrolmentForm }>enrolment package (PDF)</a>.  Complete these forms and together with a copy of either your birth certificate/passport or proof of residency (work or resident visa) – email to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a>. Alternatively, you can bring these forms along with your birth certificate/passport or proof of residency to the clinic in person.</p>
+                        {/* <p className="mb-4">Unfortunately our books are currently closed and we aren't taking any new patients at this time.</p> */}
+                        {/* <p className="mb-4">We will be opening our books in January 2023.</p> */}
+                        <p className="mb-4">We have two different enrolment forms:
+                            <ul className="ml-4 my-4 list-disc">
+                                <li>enrolment package for <a href={enrolmentFormOver16}>paitents 16 years and older</a></li>
+                                <li>enrolment package for <a href={enrolmentFormUnder16}>paitents 15 years and under</a></li>
+                            </ul>Complete these forms and together with a copy of either your birth certificate/passport or proof of residency (work or resident visa) – email to <a href="mailto:office@titirangimc.co.nz">office@titirangimc.co.nz</a>. Alternatively, you can bring these forms along with your birth certificate/passport or proof of residency to the clinic in person.</p>
                         <p class="mb-4">This enrolment process needs to be completed at least 1 week prior to your first appointment.</p>
                         <h3 class="font-bold mb-4">Enrolment checklist</h3>
                         <p className="mb-4">Please make sure you have completed and signed:</p>
                         <ul className="mb-4">
-                            <li>☑ Completed <a href={ enrolmentForm }>enrolment package (PDF)</a></li>
+                            <li>☑ Completed the relevant enrolment forms</li>
                             <li>☑ ProCare enrolment</li>
                             <li>☑ Registration checklist</li>
                             <li>☑ Consent form for request of notes</li>
@@ -50,7 +54,6 @@ function BookingsPage() {
                         </ul>
                         <p class="mb-4">Please click here to view the <a href={ enrolmentFormGuide }>Enrolment Form Guide for Patients (PDF)</a></p>
                         <p class="mb-4">Your first appointment with the doctor will need to be a double appointment for the doctor to go through all your medical history. For your initial appointment, we require pre-payment before you see the doctor.</p>
-                        */}
                     </div>
                 </section>
             </div>
