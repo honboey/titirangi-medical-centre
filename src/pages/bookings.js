@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import enrolmentFormOver16 from "../forms/enrolment-16-plus.pdf"
@@ -26,7 +27,7 @@ function BookingsPage() {
                             <p>If you would like to book a GP appointment, please click <a href="https://health365.co.nz/SGAccount/LogOn">log into Health365</a></p>
                         </div>                    
                          <div className="pt-8 pb-8 border-b border-black">
-                            <p>NB If you have an infectious illness or require a nurse appointment please call 09 817 8069 instead. Please read this page for more information regarding Health365 and appointments.</p>
+                            <p>NB If you have an infectious illness or require a nurse appointment please call 09 817 8069 instead. Please read <Link to="/health365">the Health365 page</Link> for more information regarding Health365 and appointments.</p>
                         </div>
                     </div>
                 </section>
