@@ -20,12 +20,12 @@ function BookingsPage() {
                             <p className="font-display text-2xl md:text-3xl mb-4">Call <a href="tel:tel:+64098178069">(09) 817 8069</a></p>
                             <p>Call us to book an appointment.</p>
                         </div>
-                        <div className="pt-8">
+                        <div className="pt-8 pb-8 border-b border-black">
                             <h3 className="uppercase leading-snug">Option 2</h3>
-                            <p className="font-display text-2xl md:text-3xl mb-4 text-gray-400">Health365</p>
+                            <p className="font-display text-2xl md:text-3xl mb-4">Health365</p>
                             <p>If you would like to book a GP appointment, please click <a href="https://health365.co.nz/SGAccount/LogOn">log into Health365</a></p>
                         </div>                    
-                         <div className="pb-8 border-b border-black">
+                         <div className="pt-8 pb-8 border-b border-black">
                             <p>NB If you have an infectious illness or require a nurse appointment please call 09 817 8069 instead. Please read this page for more information regarding Health365 and appointments.</p>
                         </div>
                     </div>
