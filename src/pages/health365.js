@@ -16,7 +16,12 @@ function health365() {
             <p className="mb-4"><a href="https://health365.co.nz/SGAccount/LogOn">Health365</a> is a secure online system allowing patients to book doctor appointments, access your own lab results, immunisation records or order repeat prescriptions online.</p>
             <p className="mb-4">Once enrolled in health365, you can access your records with a secure password.It provides 24 hour access, 7 days a week. This service is available for $10 a year.</p>
             <p className="mb-4">If you are interested, please download <a href={health365Form}>this form</a> and return to reception and they will go through the process of setting it up. You will need proof of identification and an email address to set it up. Once set up, you will receive a username and password via email.</p>
-            <p className="mb-4">Currently we are unable to book appointments through Health365 due to the current alert levels – please call <a href="tel:tel:+64098178069">09 817 8069</a> to book your appointment</p>
+            <p className="mb-4">To protect the health and wellbeing of our patients and staff, we request patients who have an infectious illness (respiratory, gastroenteritis, contagious viral infections such as chicken pox, etc) to call our receptionist team on 817 8069 to make an appointment held in our dedicated external space that has the capacity to contain potential infectious illnesses. For additional protection, please wear a face mask in this clinical setting.</p>
+            <p className="mb-4">Please note if a patient books an appointment online who presents with a respiratory and/or gastroenteritis or any other infectious illness they will need to reschedule and pay for the original appointment.</p>
+            <p className="mb-4">To make an online booking please click on the available slot. Our 15-minute appointment allows our doctors to attend to one main health concern. If you would like a consultation for additional health issues, please make a double appointment.</p>
+            <p className="mb-4">Adult first appointments will require an extended appointment – one with our Registered Nurse and following a double appointment with the Doctor.</p>
+            <p className="mb-4">For Drivers License Assessments please contact our receptionists to arrange an appointment with one of our Nurse Prescribers.</p>
+            <p className="mb-4">To provide a patient centred and responsive service, we require patients to provide two hours’ notice if they are not able to attend their booked appointments, otherwise a Did Not Attend (DNA) fee applies.</p>
           </div>
         </section>
       </div >
